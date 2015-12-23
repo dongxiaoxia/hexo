@@ -1,0 +1,635 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Markdown写作常用语法 | Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="东小侠">
+    
+    <meta name="description" content="这是新的开始，我用hexo创建了第一篇文章。
+标题
+使用 # 表示标题，一级标题使用一个 # ，二级标题使用两个 ## ，以此类推，共有六级标题。
+使用 ===== 表示高阶标题，使用 ——— 表示次阶标题。
+示例：
+# 这是一级标题  
+## 这是二级标题  
+### 这是三级标题  
+#####">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/touxiang.jpg" alt="Hello World" title="Hello World"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hello World">Hello World</a></h1>
+				<h2 class="blog-motto">怕什么真理无穷 进一寸有进一寸的欢喜</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">存档</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/about">简介</a></li>
+					
+					<li>
+					
+						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="st-search-inpu" maxlength="20" placeholder="Search" />
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/08/15/hexo-writing/" title="Markdown写作常用语法" itemprop="url">Markdown写作常用语法</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://www.dongxiaoxia.xyz" title="东小侠">东小侠</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-08-14T16:04:12.000Z" itemprop="datePublished">2015-08-15</time>
+    更新日期:<time datetime="2015-08-16T08:57:53.683Z" itemprop="dateModified">2015-08-16</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#标题"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题"><span class="toc-number">2.</span> <span class="toc-text">这是一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这是二级标题"><span class="toc-number">2.1.</span> <span class="toc-text">这是二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这是三级标题"><span class="toc-number">2.1.1.</span> <span class="toc-text">这是三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#这是六级标题"><span class="toc-number">2.1.1.0.0.1.</span> <span class="toc-text">这是六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题-1"><span class="toc-number">3.</span> <span class="toc-text">这是一级标题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#引用"><span class="toc-number">4.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码块"><span class="toc-number">5.</span> <span class="toc-text">代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Code Block</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#快捷方式：code"><span class="toc-number">5.1.1.</span> <span class="toc-text">快捷方式：code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#普通的代码块"><span class="toc-number">5.1.2.</span> <span class="toc-text">普通的代码块</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#列表"><span class="toc-number">6.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#粗体和斜体"><span class="toc-number">7.</span> <span class="toc-text">粗体和斜体</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#表格"><span class="toc-number">8.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分割线"><span class="toc-number">9.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#链接"><span class="toc-number">10.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#导入图片"><span class="toc-number">11.</span> <span class="toc-text">导入图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#反斜杠"><span class="toc-number">12.</span> <span class="toc-text">反斜杠</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#空格"><span class="toc-number">13.</span> <span class="toc-text">空格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除线"><span class="toc-number">14.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#页内跳转"><span class="toc-number">15.</span> <span class="toc-text">页内跳转</span></a></li></ol>
+		</div>
+		
+		<p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
+<h1 id="标题">标题</h1><ul>
+<li>使用 # 表示标题，一级标题使用一个 # ，二级标题使用两个 ## ，以此类推，共有六级标题。</li>
+<li><p>使用 ===== 表示高阶标题，使用 ——— 表示次阶标题。</p>
+<p>示例：</p>
+<pre><code># 这是一级标题  
+## 这是二级标题  
+### 这是三级标题  
+###### 这是六级标题  
+这是一级标题  
+========  
+这是二级标题  
+--------------</code></pre>
+
+<p>页面显示：</p>
+<blockquote>
+<h1 id="这是一级标题">这是一级标题</h1><h2 id="这是二级标题">这是二级标题</h2><h3 id="这是三级标题">这是三级标题</h3><h6 id="这是六级标题">这是六级标题</h6><h1 id="这是一级标题-1">这是一级标题</h1><p>这是二级标题</p>
+</blockquote>
+<p>注意：</p>
+<ul>
+<li>#和标题之间加一个空格。</li>
+<li>==== 和 —- 表示标题时，大于等于2个都可以表示。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="引用">引用</h1><pre><code>使用 &gt; 表示引用， <span class="prompt">&gt;&gt; </span>表示引用里面再套一层引用，依次类推。
+</code></pre><p><strong>示例</strong>：</p>
+<pre><code> > 这是一级引用
+>> 这是二级引用
+>>> 这是三级引用
+
+>这是一级引用</code></pre>
+
+<p><strong>页面显示</strong>：</p>
+<blockquote>
+<p>这是一级引用</p>
+<blockquote>
+<p>这是二级引用</p>
+<blockquote>
+<p>这是三级引用</p>
+</blockquote>
+</blockquote>
+<p>这是一级引用</p>
+</blockquote>
+<p><strong>注意</strong>：</p>
+<ul>
+<li>如果 &gt; 和 &gt;&gt; 嵌套使用的话，从 &gt;&gt; 退到 &gt; 时，必须之间要加一个空格或者 &gt; 作为过渡，否则默认为下一行和上一行是同一级别的引用。</li>
+<li>引用标记里可以使用其他标记，如：有序列表或无序列表标记，代码标记等。</li>
+</ul>
+<hr>
+<h1 id="代码块">代码块</h1><p>　　使用```表示代码块。</p>
+<p>　　<strong>示例</strong>：<br>　　```javascript<br>　　var canvas = document.getElementById(“canvas”);<br>　　var context = canvas.getContext(“2d”);<br>　　```</p>
+<p>　　<strong>页面显示</strong>：<br>　　<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">　　<span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">"canvas"</span>);</span><br><span class="line">　　<span class="keyword">var</span> context = canvas.getContext(<span class="string">"2d"</span>);</span><br></pre></td></tr></table></figure></p>
+<p>　　<strong>示例</strong>：<br>　　　　这是`javascript`代码<br>　　<strong>页面显示</strong>：<br>　　　　这是<code>javascript</code>代码</p>
+<p>　　<strong>注意</strong>：</p>
+<ul>
+<li>`这个符号是在 Esc 键下面，切换到英文下即可。</li>
+<li>```后面的 javascript 表示此段代码为javascript代码，Markdown会自行使用javascript代码颜色渲染。</li>
+</ul>
+<h2 id="Code_Block"><strong>Code Block</strong></h2><p>在文章中插入代码。</p>
+<h3 id="快捷方式：code"><strong>快捷方式</strong>：code</h3><figure class="highlight"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>
+<h3 id="普通的代码块"><strong>普通的代码块</strong></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">figure</span> <span class="attribute">class</span>=<span class="value">"highlight"</span>&gt;</span><span class="tag">&lt;<span class="title">table</span>&gt;</span><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"gutter"</span>&gt;</span><span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"line"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"code"</span>&gt;</span><span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"line"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span><span class="tag">&lt;/<span class="title">table</span>&gt;</span><span class="tag">&lt;/<span class="title">figure</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">figure</span> <span class="attribute">class</span>=<span class="value">"highlight lisp"</span>&gt;</span><span class="tag">&lt;<span class="title">table</span>&gt;</span><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"gutter"</span>&gt;</span><span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"line"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"code"</span>&gt;</span><span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"line"</span>&gt;</span>alert<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"list"</span>&gt;</span>(<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"quoted"</span>&gt;</span>'Hello<span class="tag">&lt;/<span class="title">span</span>&gt;</span> World!')<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"comment"</span>&gt;</span>;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span><span class="tag">&lt;/<span class="title">table</span>&gt;</span><span class="tag">&lt;/<span class="title">figure</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">figure</span> <span class="attribute">class</span>=<span class="value">"highlight"</span>&gt;</span><span class="tag">&lt;<span class="title">table</span>&gt;</span><span class="tag">&lt;<span class="title">tr</span>&gt;</span><span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"gutter"</span>&gt;</span><span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"line"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"code"</span>&gt;</span><span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"line"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span><span class="tag">&lt;/<span class="title">td</span>&gt;</span><span class="tag">&lt;/<span class="title">tr</span>&gt;</span><span class="tag">&lt;/<span class="title">table</span>&gt;</span><span class="tag">&lt;/<span class="title">figure</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert<span class="list">(<span class="quoted">'Hello</span> World!')</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p>指定语言</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
+<p>[rectangle setX: 10 y: 10 width: 20 height: 20];<br>附加说明</p>
+<figure class="highlight stylus"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.<span class="function"><span class="title">map</span><span class="params">(callback[, thisArg])</span></span></span><br></pre></td></tr></table></figure>
+<p>Array.map<br>array.map(callback[, thisArg])<br>附加说明和网址</p>
+<figure class="highlight ruby"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">_</span>.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, <span class="string">''</span>, <span class="number">3</span>]);</span><br><span class="line"><span class="status">=&gt;</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<p><em>.compactUnderscore.js
+</em>.compact([0, 1, false, 2, ‘’, 3]);<br>=&gt; [1, 2, 3]</p>
+<hr>
+<h1 id="列表">列表</h1><p>　　使用<code>1. 2. 3.</code>表示有序列表，使用<code>*</code>或<code>-</code>或<code>+</code>表示无序列表。<br>　　<strong>示例1</strong>：<br>　　有序列表：</p>
+<p>　　1. 第一点<br>　　2. 第二点<br>　　4. 第三点</p>
+<p>　　<strong>页面显示</strong>：</p>
+<ol>
+<li>第一点</li>
+<li>第二点</li>
+<li>第三点</li>
+</ol>
+<p>　　<strong>示例2</strong>：<br>　　无序列表：<br>+ 呵呵<br>  　　* 嘉嘉<br>  　　- 嘻嘻<br> 　　 - 吼吼<br>   　　　　 - 嘎嘎<br>   　　　　 + 桀桀<br>* 哈哈<br>　　<strong>页面显示</strong>：</p>
+<ul>
+<li>呵呵<ul>
+<li>嘉嘉</li>
+</ul>
+<ul>
+<li>嘻嘻</li>
+<li>吼吼<ul>
+<li>嘎嘎</li>
+</ul>
+<ul>
+<li>桀桀</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>哈哈</li>
+</ul>
+<p>　　<strong>注意</strong>：</p>
+<ul>
+<li>无序列表或有序列表标记和后面的文字之间要有一个空格隔开。</li>
+<li>有序列表标记不是按照你写的数字进行显示的，而是根据当前有序列表标记所在位置显示的，如示例1所示。</li>
+<li>无序列表的项目符号是按照实心圆、空心圆、实心方格的层级关系递进的，如例2所示。通常情况下，同一层级使用同一种标记表示，便于自己查看和管理。</li>
+</ul>
+<hr>
+<h1 id="粗体和斜体">粗体和斜体</h1><p>　　使用 <code>**</code> 或者 <code>__</code> 表示粗体。<br>　　使用 <code>*</code> 或者 <code>_</code> 表示斜体。</p>
+<p>　　<strong>示例</strong>：<br>　　　　**粗体1**　　__粗体2__<br>　　　　*斜体1*　　_斜体2_</p>
+<p>　　<strong>页面显示</strong>：<br>　　　　<strong>粗体1</strong>　　<strong>粗体2</strong><br>　　　　<em>斜体1</em>　　<em>斜体2</em></p>
+<p>　　<strong>注意</strong>：<br>　　前后的 * 或 _ 与要 加粗或倾斜 的字体之间不能有空格。</p>
+<hr>
+<h1 id="表格">表格</h1><ul>
+<li>——: 为右对齐。</li>
+<li>:—— 为左对齐。</li>
+<li>:——: 为居中对齐。</li>
+<li>——- 为使用默认居中对齐。</li>
+</ul>
+<p>　　<strong>示例</strong>：</p>
+<pre><code>|<span class="string">         序号    </span>|<span class="string">    交易名    </span>|<span class="string">    交易说明    </span>|<span class="string">    备注    </span>|
+|<span class="string">    ------: </span>|<span class="string">    :-------:    </span>|<span class="string">    :---------   </span>|<span class="string">    ------    </span>|
+|<span class="string">    1    </span>|<span class="string">    prfcfg    </span>|<span class="string">    菜单配置    </span>|<span class="string">    可以通过此交易查询到所有交易码和菜单的对应关系    </span>|
+|<span class="string">    2    </span>|<span class="string">    gentmo    </span>|<span class="string">    编译所有交易    </span>|<span class="string">    </span>|
+|<span class="string">    100000    </span>|<span class="string">    sysdba    </span>|<span class="string">    数据库表模型汇总    </span>|<span class="string">    </span>|
+</code></pre><p>　　<strong>页面显示</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">序号</th>
+<th style="text-align:center">交易名</th>
+<th style="text-align:left">交易说明</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:center">prfcfg</td>
+<td style="text-align:left">菜单配置</td>
+<td>可以通过此交易查询到所有交易码和菜单的对应关系</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:center">gentmo</td>
+<td style="text-align:left">编译所有交易</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">100000</td>
+<td style="text-align:center">sysdba</td>
+<td style="text-align:left">数据库表模型汇总</td>
+</tr>
+</tbody>
+</table>
+<p>　　<strong>注意</strong>：</p>
+<ul>
+<li>每个Markdown解析器都不一样，可能左右居中对齐方式的表示方式不一样。</li>
+<li>可以使用<code>&lt;table&gt;</code>标签</li>
+</ul>
+<hr>
+<h1 id="分割线">分割线</h1><p>　　使用 <code>---</code> 或者 <code>***</code> 或者 <code>* * *</code> 表示水平分割线。<br>　　<strong>示例</strong>：</p>
+<p>---
+ 　　</p>
+<p>***
+ 　　</p>
+<p>* * *</p>
+<p>　　<strong>页面显示</strong>：</p>
+<hr>
+<p> 　　</p>
+<hr>
+<p> 　　</p>
+<hr>
+<p>　　<strong>注意</strong>：</p>
+<ul>
+<li>只要 * 或者 - 大于等于三个就可组成一条平行线。</li>
+<li>使用 — 作为水平分割线时，要在它的前后都空一行，防止 — 被当成标题标记的表示方式。</li>
+</ul>
+<hr>
+<h1 id="链接">链接</h1><p>　　使用 <code>[](link &quot;Optional title&quot;)</code> 表示行内链接。其中：</p>
+<ul>
+<li>[] 内的内容为要添加链接的文字。</li>
+<li>link 为链接地址。</li>
+<li>Optional title 为显示标题。显示效果为在你将鼠标放到链接上后，会显示一个小框提示，提示的内容就是 Optional title 里的内容。</li>
+</ul>
+<p>　　<strong>示例</strong>：</p>
+<p>　　<code>这是我的博客地址：[Hello World](http://www.dongxiaoxia.xyz &quot;Hello World&quot; )</code></p>
+<p>　　<code>这是我的博客地址：[Hello World][1]</code></p>
+<p>　　<code>[1]:http://www.dongxiaoxia.xyz &quot;Hello World&quot;</code></p>
+<p>　　<strong>页面显示</strong>：</p>
+<p>　　这是我的博客地址：<a href="http://www.dongxiaoxia.xyz" title="Hello World">Hello World</a></p>
+<p>　　这是我的博客地址：<a href="http://www.dongxiaoxia.xyz" title="Hello World">Hello World</a></p>
+<p>　　<strong>注意</strong>：</p>
+<ul>
+<li>参考式链接和行内链接的效果是一样的，各有利弊。行内连接清晰易懂，可以清楚的知道链接的地址，但是不便于多次利用。参考式链接可以重复使用，但不能即刻知道链接的地址。</li>
+<li>是在本窗口打开链接还是新建一个窗口还待研究。</li>
+<li>Markdown是支持HTML语法的，所以可以直接使用<code>&lt;a&gt;</code>标签,例如<code>&lt;a href=&quot;http://www.dongxiaoxia.xyz&quot;&gt;Hello World&lt;/a&gt;</code>，显示<a href="http://www.dongxiaoxia.xyz">Hello World</a>。</li>
+<li>如果想直接显示链接地址，可以使用<code>&lt;http://www.dongxiaoxia.xyz&gt;</code>写法，显示<a href="http://www.dongxiaoxia.xyz">http://www.dongxiaoxia.xyz</a></li>
+<li>还可以连<code>&lt;&gt;</code>都省略，直接使用<a href="http://www.dongxiaoxia.xyz">http://www.dongxiaoxia.xyz</a> 写法，显示<a href="http://www.dongxiaoxia.xyz">http://www.dongxiaoxia.xyz</a> ，注意链接后面接一个空格。</li>
+</ul>
+<hr>
+<h1 id="导入图片">导入图片</h1><p>　　使用 <code>![Alt text](/path/to/img.jpg &quot;Optional title&quot;)</code> 导入图片。其中：</p>
+<ul>
+<li>Alt text 为如果图片无法显示时显示的文字；</li>
+<li>/path/to/img.jpg 为图片所在路径；</li>
+<li>Optional title 为显示标题。显示效果为在你将鼠标放到图片上后，会显示一个小框提示，提示的内容就是 Optional title 里的内容。</li>
+</ul>
+<p>　　<strong>示例</strong>：</p>
+<p><img src="/img/touxiang.jpg" alt="Markdown" title="这是我的头像，帅不帅"></p>
+<p>　　<strong>注意</strong>：</p>
+<ul>
+<li>导入的图片路径可以使用绝对路径也可以使用相对路径，建议使用相对路径。</li>
+<li>我通常的做法是Markdown文档的同级目录下建立一个pictures文件夹，里面放置所有所需的图片，如果图片多的话，你也可以在pictures文件夹里建立子文件夹归类</li>
+</ul>
+<hr>
+<h1 id="反斜杠">反斜杠</h1><p>　　使用<code>\</code>表示反斜杠。在你不想显示Markdown标记时可以使用反斜杠。<br>　　<strong>示例</strong>：<br>　　　　\*这里不会显示斜体\*</p>
+<p>　　<strong>页面显示</strong>：<br>　　　　*这里不会显示斜体*</p>
+<hr>
+<h1 id="空格">空格</h1><p>　　Markdown语法会忽略首行开头的空格，如果要体现出首行开头空两个的效果，可以使用<strong>全角符号下的空格</strong>，windows下使用<code>shift+空格</code>切换。</p>
+<hr>
+<h1 id="删除线">删除线</h1><p>　　使用<code>~~</code>表示删除线。<br>　　<strong>示例</strong>：<br>　　　　~~这是一条删除线~~</p>
+<p>　　<strong>页面显示</strong>：<br>　　　　<del>这是一条删除线</del></p>
+<hr>
+<h1 id="页内跳转">页内跳转</h1><p>　　使用html代码实现页内跳转。在要跳转到的位置定义个锚<code>&lt;span id = &quot;jump&quot;&gt;hehe&lt;/span&gt;</code>，然后使用<code>[你好](#jump)</code>将<code>你好</code>设置为一单击即跳转到<code>hehe</code>所在位置的效果。<br>　　<strong>示例</strong>：<br>　　　　<code>[你好](#jump)</code><br>　　　　<code>&lt;span id = &quot;jump&quot;&gt;hehe&lt;/span&gt;</code></p>
+<p>　　<strong>页面显示</strong>：<br>　　　　<a href="#jump">你好</a><br>　　　　<span id="jump">hehe</span></p>
+<hr>
+
+<p><a href="http://www.cnblogs.com/crazyant007/p/4220066.html?utm_source=tuicool" target="_blank" rel="external">http://www.cnblogs.com/crazyant007/p/4220066.html?utm_source=tuicool</a><br></p>
+<hr>
+<p>参考<a href="http://www.cnblogs.com/crazyant007/p/4220066.html?utm_source=tuicool" target="_blank" rel="external">http://www.cnblogs.com/crazyant007/p/4220066.html?utm_source=tuicool</a> 改写</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/hexo/">hexo</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.dongxiaoxia.xyz/2015/08/15/hexo-writing/" data-title="Markdown写作常用语法 | Hello World" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/08/18/dropPic/" title="演示：HTML5应用之文件拖拽上传">
+  <strong>上一篇:</strong><br/>
+  <span>
+  演示：HTML5应用之文件拖拽上传</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/08/15/hello-world/"  title="Hello World">
+ <strong>下一篇:</strong><br/> 
+ <span>Hello World
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#标题"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题"><span class="toc-number">2.</span> <span class="toc-text">这是一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这是二级标题"><span class="toc-number">2.1.</span> <span class="toc-text">这是二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这是三级标题"><span class="toc-number">2.1.1.</span> <span class="toc-text">这是三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#这是六级标题"><span class="toc-number">2.1.1.0.0.1.</span> <span class="toc-text">这是六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是一级标题-1"><span class="toc-number">3.</span> <span class="toc-text">这是一级标题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#引用"><span class="toc-number">4.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码块"><span class="toc-number">5.</span> <span class="toc-text">代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Code Block</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#快捷方式：code"><span class="toc-number">5.1.1.</span> <span class="toc-text">快捷方式：code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#普通的代码块"><span class="toc-number">5.1.2.</span> <span class="toc-text">普通的代码块</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#列表"><span class="toc-number">6.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#粗体和斜体"><span class="toc-number">7.</span> <span class="toc-text">粗体和斜体</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#表格"><span class="toc-number">8.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分割线"><span class="toc-number">9.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#链接"><span class="toc-number">10.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#导入图片"><span class="toc-number">11.</span> <span class="toc-text">导入图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#反斜杠"><span class="toc-number">12.</span> <span class="toc-text">反斜杠</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#空格"><span class="toc-number">13.</span> <span class="toc-text">空格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除线"><span class="toc-number">14.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#页内跳转"><span class="toc-number">15.</span> <span class="toc-text">页内跳转</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Spring/" title="Spring">Spring<sup>1</sup></a></li>
+		
+			<li><a href="/categories/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/categories/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/categories/java/" title="java">java<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Spring/" title="Spring">Spring<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html5/" title="html5">html5<sup>1</sup></a></li>
+		
+			<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">5</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Spring/" style="font-size: 10px;">Spring</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/java/" style="font-size: 10px;">java</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m dongxiaoxia. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font clearfix">
+		
+		
+		
+		<a href="https://github.com/dongxiaoxia" target="_blank" title="github"></a>
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2015 
+		
+		<a href="http://www.dongxiaoxia.xyz" target="_blank" title="东小侠">东小侠</a>
+		
+		</p>
+		<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','LEW-HJ8C4q4d2iL3MKNA','2.0.0');
+</script>
+
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"null"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+  </body>
+</html>
