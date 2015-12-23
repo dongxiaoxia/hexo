@@ -1,4 +1,4 @@
-title: SpringMVC Controller½ÓÊÕList< Map>»òList< Object>
+title: SpringMVC Controlleræ¥æ”¶List< Map>æˆ–List< Object>
 date: 2015-12-23 20:58:44
 permalink: spring00001
 tags:
@@ -7,16 +7,16 @@ categories:
 - Spring
 
 ---
-googleÁËÒ»¸öÏÂÎç£¬ÔİÊ±ÕÒµ½Á½ÖÖ½â¾ö°ì·¨£¬ËäÈ»ÕâÁ½ÖÖ·½·¨¶¼²»ÊÇºÜ·½±ã£¬ÔİÊ±ÏÈÕâÃ´ÓÃ×Å°É£¡
-##1.È«²¿²ÎÊı·â×°ÎªÒ»¸ö¶ÔÏó
-###controllerÀà
+googleäº†ä¸€ä¸ªä¸‹åˆï¼Œæš‚æ—¶æ‰¾åˆ°ä¸¤ç§è§£å†³åŠæ³•ï¼Œè™½ç„¶è¿™ä¸¤ç§æ–¹æ³•éƒ½ä¸æ˜¯å¾ˆæ–¹ä¾¿ï¼Œæš‚æ—¶å…ˆè¿™ä¹ˆç”¨ç€å§ï¼
+## 1.å…¨éƒ¨å‚æ•°å°è£…ä¸ºä¸€ä¸ªå¯¹è±¡
+### controllerç±»
 ```java
 /**
- * ÅúÁ¿ĞÂÔöÓÃ»§
+ * æ‰¹é‡æ–°å¢ç”¨æˆ·
  *
- * ²»ÄÜÖ±½Ó´«List  < Map> Êı×é¶ÔÏó£¬Ö»ÄÜÓÃÁ½¸ö·¨×Ó´«²ÎÊı£¬Ò»¸öÊÇ°ÑÊı×é¶ÔÏóÔÚÇ°¶Ë±äÎªString´«µ½ºóÌ¨ÔÙ½âÎö£¬ÁíÍâÒ»¸ö¾ÍÊÇ°ÑËùÓĞ²ÎÊı·â×°³ÉÒ»¸ö¶ÔÏó£¬Ç°¶ËJSON.stringify(params)ºó±äÎª×Ö·û´®´«µ½ºóÌ¨£¬ºóÌ¨»á×Ô¶¯×ª»»Îª¶ÔÏó
+ * ä¸èƒ½ç›´æ¥ä¼ List  < Map> æ•°ç»„å¯¹è±¡ï¼Œåªèƒ½ç”¨ä¸¤ä¸ªæ³•å­ä¼ å‚æ•°ï¼Œä¸€ä¸ªæ˜¯æŠŠæ•°ç»„å¯¹è±¡åœ¨å‰ç«¯å˜ä¸ºStringä¼ åˆ°åå°å†è§£æï¼Œå¦å¤–ä¸€ä¸ªå°±æ˜¯æŠŠæ‰€æœ‰å‚æ•°å°è£…æˆä¸€ä¸ªå¯¹è±¡ï¼Œå‰ç«¯JSON.stringify(params)åå˜ä¸ºå­—ç¬¦ä¸²ä¼ åˆ°åå°ï¼Œåå°ä¼šè‡ªåŠ¨è½¬æ¢ä¸ºå¯¹è±¡
  *
- * @param batchCreateVO ·â×°ºÃµÄ¶ÔÏó
+ * @param batchCreateVO å°è£…å¥½çš„å¯¹è±¡
  * @param request
  * @param session
  * @return
@@ -30,7 +30,7 @@ protected String batchCreate(
 	}
 ```
 
-###·â×°µÄ¶ÔÏó
+### å°è£…çš„å¯¹è±¡
 ```java
 package com.miracle.mby.account.vo;
 
@@ -38,12 +38,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * ÒÆ¶¯¶ËÅúÁ¿´´½¨ÓÃ»§·â×°¶ÔÏó
+ * ç§»åŠ¨ç«¯æ‰¹é‡åˆ›å»ºç”¨æˆ·å°è£…å¯¹è±¡
  * <p/>
- * ticket       Éí·İĞ£Ñéticket
- * mac          Éí·İĞ£Ñémac
- * refDeptId    ÆóÒµ¶¥¼¶²¿ÃÅ
- * usersString  ÓÃ»§¶ÔÏóÊı×é×Ö·û´®
+ * ticket       èº«ä»½æ ¡éªŒticket
+ * mac          èº«ä»½æ ¡éªŒmac
+ * refDeptId    ä¼ä¸šé¡¶çº§éƒ¨é—¨
+ * usersString  ç”¨æˆ·å¯¹è±¡æ•°ç»„å­—ç¬¦ä¸²
  *
  * @author dongxiaoxia
  * @create 2015-12-22 14:33
@@ -88,9 +88,9 @@ public class BatchCreateVO {
 }
 ```
 
-###Ò³ÃæÇëÇó
+### é¡µé¢è¯·æ±‚
 ```javascript
-var users = [{"userName": "²âÊÔÓÃ»§1","sex":0,"mobile":"15432343213","email":"123@123.com","phone":"123213","departmentIds":[]}];
+var users = [{"userName": "æµ‹è¯•ç”¨æˆ·1","sex":0,"mobile":"15432343213","email":"123@123.com","phone":"123213","departmentIds":[]}];
 var params ={
     "ticket":"test",
     "mac":"test",
@@ -106,8 +106,8 @@ $.ajax({
 ```
 
 
-##2.µ¥¶À×ª»»ĞèÒªµÄList
-µ¥¶À°ÑList< Map>»òList< Object> ²ÎÊı×ª»»Îªjson×Ö·û´®£¬È»ºó´«µ½ºóÌ¨Ö®ºóÔÙ°Ñ×Ö·û´®×ª»»»á¶ÔÏó
+## 2.å•ç‹¬è½¬æ¢éœ€è¦çš„List
+å•ç‹¬æŠŠList< Map>æˆ–List< Object> å‚æ•°è½¬æ¢ä¸ºjsonå­—ç¬¦ä¸²ï¼Œç„¶åä¼ åˆ°åå°ä¹‹åå†æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¼šå¯¹è±¡
 
 
 
