@@ -18,7 +18,7 @@ categories:
 ### 安装node.js
 &emsp;&emsp;node.js官网https://nodejs.org/
 ### 安装Hexo
-&emsp;&emsp;命令行输入*npm -install -g hexo*，等待安装完成。
+&emsp;&emsp;命令行输入*npm install -g hexo*，等待安装完成。
 
 &emsp;&emsp;可能会出现下载不了的问题，可以设置npm国内镜像。镜像使用方法（三种办法任意一种都能解决问题，建议使用第三种，将配置写死，下次用的时候配置还在）:
 1. 通过config命令
