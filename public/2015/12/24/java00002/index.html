@@ -1,0 +1,511 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Java程序员的就业指导 | Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="东小侠">
+    
+    <meta name="description" content="来自 CDSN博客 java那些事
+
+  想要成为合格的Java程序员或工程师到底需要具备哪些专业技能，面试者在面试之前到底需要准备哪些东西呢？本文陈列的这些内容既可以作为个人简历中的内容，也可以作为面试的时候跟面试官聊的东西，你可以把这些内容写到你的简历中，当然更需要的是你在面试的时候向面试官展示">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/touxiang.jpg" alt="Hello World" title="Hello World"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hello World">Hello World</a></h1>
+				<h2 class="blog-motto">怕什么真理无穷 进一寸有进一寸的欢喜</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">存档</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/about">简介</a></li>
+					
+					<li>
+					
+						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="st-search-inpu" maxlength="20" placeholder="Search" />
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/24/java00002/" title="Java程序员的就业指导" itemprop="url">Java程序员的就业指导</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://www.dongxiaoxia.xyz" title="东小侠">东小侠</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-12-24T14:03:44.000Z" itemprop="datePublished">2015-12-24</time>
+    更新日期:<time datetime="2015-12-24T14:07:56.060Z" itemprop="dateModified">2015-12-24</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#专业技能"><span class="toc-number">1.</span> <span class="toc-text">专业技能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目介绍"><span class="toc-number">2.</span> <span class="toc-text">项目介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目开发流程"><span class="toc-number">3.</span> <span class="toc-text">项目开发流程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试_>>>_测试报告_/_缺陷报告"><span class="toc-number">4.</span> <span class="toc-text">测试 >>> 测试报告 / 缺陷报告</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#交付和维护_>>>_用户手册_/_操作手册"><span class="toc-number">5.</span> <span class="toc-text">交付和维护 >>> 用户手册 / 操作手册</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目管理"><span class="toc-number">6.</span> <span class="toc-text">项目管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#应用服务器："><span class="toc-number">7.</span> <span class="toc-text">应用服务器：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三方工具（插件）应用"><span class="toc-number">8.</span> <span class="toc-text">第三方工具（插件）应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#面试提问"><span class="toc-number">9.</span> <span class="toc-text">面试提问</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number"></span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常见错误"><span class="toc-number">1.</span> <span class="toc-text">常见错误</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#面试时可以反问面试官的问题"><span class="toc-number">2.</span> <span class="toc-text">面试时可以反问面试官的问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#S-A-R-法则"><span class="toc-number">3.</span> <span class="toc-text">S.A.R.法则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#算法题的五种解法"><span class="toc-number">4.</span> <span class="toc-text">算法题的五种解法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#录用谈判"><span class="toc-number">5.</span> <span class="toc-text">录用谈判</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自我评价"><span class="toc-number">6.</span> <span class="toc-text">自我评价</span></a></li></ol>
+		</div>
+		
+		<blockquote>
+<p>来自 CDSN博客 java那些事</p>
+</blockquote>
+<p>  想要成为合格的Java程序员或工程师到底需要具备哪些专业技能，面试者在面试之前到底需要准备哪些东西呢？本文陈列的这些内容既可以作为个人简历中的内容，也可以作为面试的时候跟面试官聊的东西，你可以把这些内容写到你的简历中，当然更需要的是你在面试的时候向面试官展示这些专业技能。相信此文对正在寻觅Java程序员（Java工程师）职位的freshman以及希望成为中高级Java开发者的junior都会有所帮助。</p>
+<h4 id="专业技能">专业技能</h4><blockquote>
+<p>熟练的使用Java语言进行面向对象程序设计，有良好的编程习惯，熟悉常用的Java API，包括集合框架、多线程（并发编程）、I/O（NIO）、Socket、JDBC、XML、反射等。</p>
+<p>熟悉基于JSP和Servlet的Java Web开发，对Servlet和JSP的工作原理和生命周期有深入了解，熟练的使用JSTL和EL编写无脚本动态页面，有使用监听器、过滤器等Web组件以及MVC架构模式进行Java Web项目开发的经验。</p>
+<p>对Spring的IoC容器和AOP原理有深入了解，熟练的运用Spring框架管理各种Web组件及其依赖关系，熟练的使用Spring进行事务、日志、安全性等的管理，有使用Spring MVC作为表示层技术以及使用Spring提供的持久化支持进行Web项目开发的经验，熟悉Spring对其他框架的整合。</p>
+<p>熟练的使用Hibernate、MyBatis等ORM框架，熟悉Hibernate和MyBatis的核心API，对Hibernate的关联映射、继承映射、组件映射、缓存机制、事务管理以及性能调优等有深入的理解。</p>
+<p>熟练的使用HTML、CSS和JavaScript进行Web前端开发，熟悉jQuery和Bootstrap，对Ajax技术在Web项目中的应用有深入理解，有使用前端MVC框架（AngularJS）和JavaScript模板引擎（HandleBars）进行项目开发的经验。</p>
+<p>熟悉常用的关系型数据库产品（MySQL、Oracle），熟练的使用SQL和PL/SQL进行数据库编程。</p>
+<p>熟悉面向对象的设计原则，对GoF设计模式和企业应用架构模式有深入的了解和实际开发的相关经验，熟练的使用UML进行面向对象的分析和设计，有TDD（测试驱动开发）和DDD（领域驱动设计）的经验。</p>
+<p>熟悉Apache、NginX、Tomcat、WildFly、Weblogic等Web服务器和应用服务器的使用，熟悉多种服务器整合、集群和负载均衡的配置。</p>
+<p>熟练的使用产品原型工具Axure，熟练的使用设计建模工具PowerDesigner和Enterprise Architect，熟练的使用Java开发环境Eclipse和IntelliJ，熟练的使用前端开发环境WebStorm，熟练的使用软件版本控制工具SVN和Git，熟练的使用项目构建和管理工具Maven和Gradle。</p>
+<p><code>说明：</code>上面罗列的这些东西并不是每一项你都要烂熟于心，根据企业招聘的具体要求可以做相应的有针对性的准备。我个人觉得前6项应该是最低要求，是作为一个Java开发者必须要具备的专业技能。<br>项目经验</p>
+</blockquote>
+<h4 id="项目介绍">项目介绍</h4><blockquote>
+<p>  本系统是X委托Y开发的用于Z的系统，系统包括A、B、C、D等模块。系统使用了Java企业级开发的开源框架E以及前端技术F。表示层运用了G架构，使用H作为视图I作为控制器并实现了REST风格的请求；业务逻辑层运用了J模式，并通过K实现事务、日志和安全性等功能，通过L实现缓存服务；持久层使用了M封装CRUD操作，底层使用N实现数据存取。整个项目采用了P开发模型。</p>
+<p><code>说明：</code>上面的描述中，E通常指Spring（Java企业级开发的一站式选择）；F最有可能是jQuery库及其插件或者是Bootstrap框架，当然如果要构建单页应用（SPA）最佳的方案是前端MVC框架（如AngularJS）和JavaScript模板引擎（如HandleBars）；G显然是MVC（模型-视图-控制），最有可能的实现框架是Spring MVC，除此之外还有Struts 2、JSF以及Apache为JSF提供的MyFaces实现，可以使用JSP作为MVC中的V，也可使用模板引擎（如Freemarker和Velocity）来生成视图，还可以是各种文档或报表（如Excel和PDF等），而Servlet和自定义的控制器是MVC中的C，当然Spring MVC中提供了作为前端控制器的DispatcherServlet；J通常是事务脚本，K应该是AOP（面向切面编程）技术，L目前广泛使用的有memcached和Redis；M的选择方案很多，最有可能的是Hibernate和MyBatis，也可以两种技术同时运用，但通常是将增删改交给Hibernate来处理，而复杂的查询则由MyBatis完成，此外TopLink、jOOQ也是优秀的持久层解决方案；底层的数据存取传统上是使用关系型数据库，可以是MySQL、Oracle、SQLServer、DB2等，随着大数据时代的来临，也可以采用NoSQL（如MongoDB、MemBase、BigTable等）和其他大数据存取方案（如GFS、HDFS等）；项目的开发模型P可以是瀑布模型、快速原型模型、增量模型、螺旋模型、喷泉模型、RAD模型等。</p>
+</blockquote>
+<h4 id="项目开发流程">项目开发流程</h4><blockquote>
+<p>可行性分析 &gt;&gt;&gt; 可行性分析报告 / 项目开发计划书</p>
+<p>需求分析 &gt;&gt;&gt; 需求规格说明书 </p>
+<p>OOAD（用例图、时序图、活动图）</p>
+<p>界面原型：帮助理解需求、业务层设计时推导事务脚本</p>
+<p>设计 &gt;&gt;&gt; 概要设计说明书/详细设计说明书 </p>
+<p>抽取业务实体（领域对象）：类图、E-R图（概念设计阶段）</p>
+<p>分层架构：确定各层的技术实现方案（具体到使用的框架、数据库服务器、应用服务器等）。业务层设计：事务脚本模式（事务：用户发送一次请求就是一个事务；脚本：一个方法或一个函数；事务脚本：把一次请求封装为一个方法或一个函数；事务脚本模式：一个事务开始于脚本的打开，终止于脚本的关闭）。业务层涉及的对象有三种类型：事务脚本类（封装了业务的流程）、数据访问对象（DAO，封装了持久化操作）、数据传输对象（DTO，封装了失血/贫血领域对象），三者之间的关系是事务脚本类组合（聚合）数据访问对象，这二者都依赖了数据传输对象</p>
+<p>正向工程（UML类图生成Java代码）和逆向工程（Java代码生成UML类图）</p>
+<p>数据库物理设计（ER图转换成表间关系图、建库和建表、使用工具插入测试数据）</p>
+<p>编码</p>
+</blockquote>
+<h4 id="测试_&gt;&gt;&gt;_测试报告_/_缺陷报告">测试 &gt;&gt;&gt; 测试报告 / 缺陷报告</h4><blockquote>
+<p>单元测试：对软件中的最小可测试单元进行检查和验证，在Java中是对类中的方法进行测试，可以使用JUnit工具来实施。</p>
+<p>集成测试：集成测试也叫组装测试或联合测试。在单元测试的基础上，将所有模块按照设计要求组装成为子系统进行测试。</p>
+<p>系统测试：将已经确认的软件、硬件、外设、网络等元素结合在一起，进行信息系统的各种组装测试和确认测试，系统测试是针对整个产品系统进行的测试，目的是验证系统是否满足了需求规格的定义，找出与需求规格不符或与之矛盾的地方，从而提出更加完善的方案。</p>
+<p>验收测试：在软件产品完成了单元测试、集成测试和系统测试之后，产品发布之前所进行的软件测试活动。它是技术测试的最后一个阶段，也称为交付测试。验收测试的目的是确保软件准备就绪，并且可以让最终用户将其用于执行软件的既定功能和任务。</p>
+</blockquote>
+<h4 id="交付和维护_&gt;&gt;&gt;_用户手册_/_操作手册">交付和维护 &gt;&gt;&gt; 用户手册 / 操作手册</h4><h4 id="项目管理">项目管理</h4><blockquote>
+<p>版本控制：CVS/SVN/Git</p>
+<p>自动构建：Ant/Maven/Ivy/Gradle</p>
+<p>持续集成：Hudson/Jenkins</p>
+<p>系统架构</p>
+<p>负载均衡服务器：F5、A10</p>
+</blockquote>
+<h4 id="应用服务器：">应用服务器：</h4><blockquote>
+<p>HTTP服务器：Apache、NginX（HTTP、反向代理、邮件代理服务器）</p>
+<p>Servlet容器：Tomcat、Resin</p>
+<p>EJB容器：WildFly（JBoss Application Server）、GlassFish、Weblogic、Websphere</p>
+<p>数据库服务器：MySQL、Oracle</p>
+</blockquote>
+<h4 id="第三方工具（插件）应用">第三方工具（插件）应用</h4><blockquote>
+<p>图表工具：基于jQuery的图表插件（如jQchart、Flot、Charted等）、Chart.js、Highcharts等。</p>
+<p>报表工具：Pentaho Reporting、iReport、DynamicReports等。</p>
+<p>文档处理：POI、iText等。</p>
+<p>工作流引擎：jBPM、OpenWFE、Snaker、SWAMP等。</p>
+<p>作业调度：Quartz、JobServer、Oddjob等。</p>
+<p>缓存服务：EhCache、memcached、SwarmCache等。</p>
+<p>消息队列：Open-MQ、ZeroMQ等。</p>
+<p>安全框架：Shiro、PicketBox等。</p>
+<p>搜索引擎：IndexTank、Lucene、ElasticSearch等。</p>
+<p>Ajax框架：jQuery、ExtJS、DWR等。</p>
+<p>UI插件：EasyUI、MiniUI等。</p>
+<p>富文本框：UEditor、CKEditor等。</p>
+</blockquote>
+<h4 id="面试提问">面试提问</h4><blockquote>
+<p>项目是为哪个公司开发的？项目的投入是多少？</p>
+<p>有多少人参与了项目开发？整个团队中，测试人员、开发人员、项目经理比例是多少？</p>
+<p>项目开发了多长时间？项目总的代码量有多少？你的代码量有多少？</p>
+<p>项目采用了怎样的开发模型或开发流程？项目的架构是怎样的？项目的技术选型是怎样的？</p>
+<p>你在项目中承担了怎样的职责？是否经常开会或加班？项目完成后有哪些收获或是经验教训？</p>
+<p>项目中最困难的部分是什么？如何解决团队开发时遇到的各种冲突？</p>
+<p>说明：对于没有实际项目经验的，可以在前程无忧、智联招聘、拉勾网等网站上搜索招聘Java程序员的公司，找到他们的官方网站了解他们做的项目，查看项目的详细介绍，然后尝试完成其中一部分功能，最好请教一下高人看看自己的设计和代码是否恰当，这样相当于积累了一定的项目经验。<br>面试题</p>
+<p>  Java常见的面试题已经总结成《Java面试题集》、《Java面试题全集》以及《面试编程题拾遗》等文章陆续发布在我的CSDN博客，各大公司的面试题我会继续整理发布。</p>
+</blockquote>
+<h3 id="其他">其他</h3><h4 id="常见错误">常见错误</h4><blockquote>
+<p>只在计算机上练习<br>不做行为面试题演练<br>不做模拟面试训练<br>试图死记硬背答案<br>不大声说出你的解题思路<br>代码不够严谨<br>不写测试代码<br>轻言放弃</p>
+</blockquote>
+<h4 id="面试时可以反问面试官的问题">面试时可以反问面试官的问题</h4><blockquote>
+<p>我注意到你们使用了X技术，请问你们是如何解决Y问题的？</p>
+<p>为什么你们的产品使用了X技术而不是Y技术？据我所知，X技术虽然有A、B、C等好处，但也存在D和E问题，而Y技术可以解决D和E问题。</p>
+<p>我对您说的X技术不是太熟悉，但我感觉它是一个不错的解决方案，您能多讲讲它的工作原理吗？</p>
+<p>你们团队是如何进行项目规划的？一周会有几次例会？每周的代码量大概是多少？</p>
+<p>就X问题我能想到的解决方案目前就只有Y了，请问您会怎么解决这个问题？</p>
+</blockquote>
+<h4 id="S-A-R-法则">S.A.R.法则</h4><blockquote>
+<p>  S.A.R法则是指先描述问题的场景，然后解释你采取的行动，最后陈述结果。</p>
+</blockquote>
+<h4 id="算法题的五种解法">算法题的五种解法</h4><blockquote>
+<p>举例法：通过举例子发现其中的一般规则。</p>
+<p>例子：圆内接三角形是锐角三角形的概率是多少？这是搜狗的一个面试题，可以在圆上随意画三个点连接成三角形就可以知道答案了。</p>
+<p>模式匹配法</p>
+<p>例子：一个有序数组的元素经过循环移动，元素的顺序变成”3 4 5 6 1 2”。怎样找到数组中最小的那个元素，假设数组中的元素各不相同。这个题目和折半查找看起来是那么相似，因此可以借鉴折半查找的算法，最小元素显然出现在”mid &gt; right”的转折点。</p>
+<p>简化推广法</p>
+<p>说明：简化问题规模和数据类型，然后再发现通用的解法。</p>
+<p>简单构造法</p>
+<p>例子：找出”abcde”的所有可能的排列组合。先考虑只有”a”的情况，再考虑”ab”的情况，以此类推。最终你可能会得到一个递归公式。这种方法往往会演变成递归法。</p>
+<p>数据结构头脑风暴法</p>
+<p>例子：随机生成一些数字，并找出其中位数。这种问题可以在头脑中将你了解的数据结构过一遍，看看哪种是最合适的数据结构。上面的题目可以建立两个堆，一个大根堆和一个小根堆，较小的元素放在大根堆，较大的元素放在小根堆，如果两个堆不平衡，可以从其中一个堆取出元素放入另一个堆即可。最后中位数应该是两个堆的根之一。</p>
+</blockquote>
+<h4 id="录用谈判">录用谈判</h4><blockquote>
+<p>要理直气壮的提出具体的待遇要求</p>
+<p>开出比预期稍高的价码</p>
+<p>不要只盯着薪水（很多公司更愿意就薪水之外的条件做出让步）</p>
+<p>使用最合适的方法（可以尝试在电话或E-mail中谈判待遇）</p>
+</blockquote>
+<h4 id="自我评价">自我评价</h4><blockquote>
+<p>学习能力（搞IT行业的人需要不断的了解新的技术、工具和方法）</p>
+<p>团队意识（相比个人英雄主义，IT行业更倡导团队合作）</p>
+<p>抗压能力（很多IT企业的工作强度相对来说还是比较大的）</p>
+</blockquote>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://www.dongxiaoxia.xyz/2015/12/24/java00002/" data-title="Java程序员的就业指导 | Hello World" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/24/java00003/" title="如何成为一个牛掰的Java大神">
+  <strong>上一篇:</strong><br/>
+  <span>
+  如何成为一个牛掰的Java大神</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/23/java00001/"  title="Date、String、Calendar三种时间类型的转换">
+ <strong>下一篇:</strong><br/> 
+ <span>Date、String、Calendar三种时间类型的转换
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#专业技能"><span class="toc-number">1.</span> <span class="toc-text">专业技能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目介绍"><span class="toc-number">2.</span> <span class="toc-text">项目介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目开发流程"><span class="toc-number">3.</span> <span class="toc-text">项目开发流程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试_>>>_测试报告_/_缺陷报告"><span class="toc-number">4.</span> <span class="toc-text">测试 >>> 测试报告 / 缺陷报告</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#交付和维护_>>>_用户手册_/_操作手册"><span class="toc-number">5.</span> <span class="toc-text">交付和维护 >>> 用户手册 / 操作手册</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#项目管理"><span class="toc-number">6.</span> <span class="toc-text">项目管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#应用服务器："><span class="toc-number">7.</span> <span class="toc-text">应用服务器：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第三方工具（插件）应用"><span class="toc-number">8.</span> <span class="toc-text">第三方工具（插件）应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#面试提问"><span class="toc-number">9.</span> <span class="toc-text">面试提问</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number"></span> <span class="toc-text">其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常见错误"><span class="toc-number">1.</span> <span class="toc-text">常见错误</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#面试时可以反问面试官的问题"><span class="toc-number">2.</span> <span class="toc-text">面试时可以反问面试官的问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#S-A-R-法则"><span class="toc-number">3.</span> <span class="toc-text">S.A.R.法则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#算法题的五种解法"><span class="toc-number">4.</span> <span class="toc-text">算法题的五种解法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#录用谈判"><span class="toc-number">5.</span> <span class="toc-text">录用谈判</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自我评价"><span class="toc-number">6.</span> <span class="toc-text">自我评价</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>2</sup></a></li>
+		
+			<li><a href="/categories/Java/" title="Java">Java<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Spring/" title="Spring">Spring<sup>1</sup></a></li>
+		
+			<li><a href="/categories/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/categories/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/categories/java/" title="java">java<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Java/" title="Java">Java<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Spring/" title="Spring">Spring<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
+		
+			<li><a href="/tags/html5/" title="html5">html5<sup>1</sup></a></li>
+		
+			<li><a href="/tags/java/" title="java">java<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">4</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Spring/" style="font-size: 10px;">Spring</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/java/" style="font-size: 20px;">java</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m dongxiaoxia. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font clearfix">
+		
+		
+		
+		<a href="https://github.com/dongxiaoxia" target="_blank" title="github"></a>
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2015 
+		
+		<a href="http://www.dongxiaoxia.xyz" target="_blank" title="东小侠">东小侠</a>
+		
+		</p>
+		<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','LEW-HJ8C4q4d2iL3MKNA','2.0.0');
+</script>
+
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"null"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+  </body>
+</html>

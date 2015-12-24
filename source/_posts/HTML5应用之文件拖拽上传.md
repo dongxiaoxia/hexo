@@ -19,7 +19,7 @@ HTML5可以实现文件的拖拽上传与下载。但是目前技术有限，只
 3. `XMLHttpRequest`的操作。主要通过send方法发送到服务器。
 
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
 <head>
