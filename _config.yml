@@ -1,4 +1,4 @@
-﻿# Hexo Configuration
+# Hexo Configuration
 ## Docs: http://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -7,7 +7,7 @@ title: Hello World
 subtitle: 怕什么真理无穷 进一寸有进一寸的欢喜
 description: 怕什么真理无穷 进一寸有进一寸的欢喜
 author: 东小侠
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -41,7 +41,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace: 
+  tab_replace:
 
 # Category & Tag
 default_category: uncategorized
@@ -63,7 +63,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: pacman
+theme: next
+
+#duoshuo
+duoshuo_shortname: dongxiaoxia
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

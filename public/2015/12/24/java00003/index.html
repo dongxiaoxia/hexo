@@ -1,100 +1,369 @@
+<!doctype html>
 
- <!DOCTYPE HTML>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
+
+
   
-    <title>如何成为一个牛掰的Java大神 | Hello World</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
     
-    <meta name="author" content="东小侠">
     
-    <meta name="description" content="来自：HollisChuang’s Blog
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="来自：HollisChuang’s Blog
 链接：http://www.hollischuang.com/archives/489
 
 一、基础篇1.1 JVM1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收
-http://www.jcp.org/en/jsr/detail">
-    
-    
-    
-    
-    
-    <link rel="icon" href="/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
-    
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+http://www.jcp.org/en/jsr/detail?id=133
+http://ifeve.com/jmm-faq/
+
+1.1.2. 了解JVM各种参">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何成为一个牛掰的Java大神">
+<meta property="og:url" content="http://www.dongxiaoxia.xyz/2015/12/24/java00003/index.html">
+<meta property="og:site_name" content="Hello World">
+<meta property="og:description" content="来自：HollisChuang’s Blog
+链接：http://www.hollischuang.com/archives/489
+
+一、基础篇1.1 JVM1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收
+http://www.jcp.org/en/jsr/detail?id=133
+http://ifeve.com/jmm-faq/
+
+1.1.2. 了解JVM各种参">
+<meta property="og:updated_time" content="2016-04-22T16:27:06.591Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何成为一个牛掰的Java大神">
+<meta name="twitter:description" content="来自：HollisChuang’s Blog
+链接：http://www.hollischuang.com/archives/489
+
+一、基础篇1.1 JVM1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收
+http://www.jcp.org/en/jsr/detail?id=133
+http://ifeve.com/jmm-faq/
+
+1.1.2. 了解JVM各种参">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 如何成为一个牛掰的Java大神 | Hello World </title>
 </head>
 
-  <body>
-    <header>
-      <div>
-		
-			<div id="imglogo">
-				<a href="/"><img src="/img/touxiang.jpg" alt="Hello World" title="Hello World"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="Hello World">Hello World</a></h1>
-				<h2 class="blog-motto">怕什么真理无穷 进一寸有进一寸的欢喜</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/">主页</a></li>
-					
-						<li><a href="/archives">存档</a></li>
-					
-						<li><a href="/tags">标签</a></li>
-					
-						<li><a href="/categories">分类</a></li>
-					
-						<li><a href="/about">简介</a></li>
-					
-					<li>
-					
-						<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="st-search-inpu" maxlength="20" placeholder="Search" />
-						</form>
-					
-					</li>
-				</ul>
-			</nav>			
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hello World</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">怕什么真理无穷 进一寸有进一寸的欢喜</p>
 </div>
 
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-something">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-flash fa-fw"></i> <br />
+            
+            有料
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
     </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
     
-      <a href="/2015/12/24/java00003/" title="如何成为一个牛掰的Java大神" itemprop="url">如何成为一个牛掰的Java大神</a>
-  </h1>
-  <p class="article-author">By
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-      <a href="http://www.dongxiaoxia.xyz" title="东小侠">东小侠</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2015-12-24T14:17:44.000Z" itemprop="datePublished">2015-12-24</time>
-    更新日期:<time datetime="2015-12-24T14:24:15.304Z" itemprop="dateModified">2015-12-24</time>
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何成为一个牛掰的Java大神
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-24T22:17:44+08:00" content="2015-12-24">
+              2015-12-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/24/java00003/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/24/java00003/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2015/12/24/java00003/" class="leancloud_visitors" data-flag-title="如何成为一个牛掰的Java大神">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
     
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、基础篇"><span class="toc-number">1.</span> <span class="toc-text">一、基础篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1_JVM"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 JVM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1-_Java内存模型，Java内存管理，Java堆和栈，垃圾回收"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2-_了解JVM各种参数及调优"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.1.2. 了解JVM各种参数及调优</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-3-_学习使用Java工具"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.1.3. 学习使用Java工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-4-_学习Java诊断工具"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.1.4. 学习Java诊断工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-5-_自己编写各种outofmemory，stackoverflow程序"><span class="toc-number">1.1.5.</span> <span class="toc-text">1.1.5. 自己编写各种outofmemory，stackoverflow程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-6-_使用工具尝试解决以下问题，并写下总结"><span class="toc-number">1.1.6.</span> <span class="toc-text">1.1.6. 使用工具尝试解决以下问题，并写下总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-7-_参考资料"><span class="toc-number">1.1.7.</span> <span class="toc-text">1.1.7. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-_Java基础知识"><span class="toc-number">1.2.</span> <span class="toc-text">1.2. Java基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-_阅读源代码"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.2.1. 阅读源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-_熟悉Java中各种变量类型"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2.2. 熟悉Java中各种变量类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-_熟悉Java_String的使用，熟悉String的各种函数"><span class="toc-number">1.2.3.</span> <span class="toc-text">1.2.3. 熟悉Java String的使用，熟悉String的各种函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-4-_熟悉Java中各种关键字"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.2.4. 熟悉Java中各种关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-5-_学会使用List，Map，Stack，Queue，Set"><span class="toc-number">1.2.5.</span> <span class="toc-text">1.2.5. 学会使用List，Map，Stack，Queue，Set</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-6-_Java_IO&Java_NIO，并学会使用"><span class="toc-number">1.2.6.</span> <span class="toc-text">1.2.6. Java IO&Java NIO，并学会使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-7-_Java反射与javassist"><span class="toc-number">1.2.7.</span> <span class="toc-text">1.2.7. Java反射与javassist</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-8-_Java序列化"><span class="toc-number">1.2.8.</span> <span class="toc-text">1.2.8. Java序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-9-_虚引用，弱引用，软引用"><span class="toc-number">1.2.9.</span> <span class="toc-text">1.2.9. 虚引用，弱引用，软引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-10-_熟悉Java系统属性"><span class="toc-number">1.2.10.</span> <span class="toc-text">1.2.10. 熟悉Java系统属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-11-_熟悉Annotation用法"><span class="toc-number">1.2.11.</span> <span class="toc-text">1.2.11. 熟悉Annotation用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-12-_JMS"><span class="toc-number">1.2.12.</span> <span class="toc-text">1.2.12. JMS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-13-_JMX"><span class="toc-number">1.2.13.</span> <span class="toc-text">1.2.13. JMX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-14-_泛型和继承，泛型和擦除"><span class="toc-number">1.2.14.</span> <span class="toc-text">1.2.14. 泛型和继承，泛型和擦除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-15-_自动拆箱装箱与字节码"><span class="toc-number">1.2.15.</span> <span class="toc-text">1.2.15. 自动拆箱装箱与字节码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-16-_实现Callback"><span class="toc-number">1.2.16.</span> <span class="toc-text">1.2.16. 实现Callback</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-17-_java-lang-Void类使用"><span class="toc-number">1.2.17.</span> <span class="toc-text">1.2.17. java.lang.Void类使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-18-_Java_Agent，premain函数"><span class="toc-number">1.2.18.</span> <span class="toc-text">1.2.18. Java Agent，premain函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-19-_单元测试"><span class="toc-number">1.2.19.</span> <span class="toc-text">1.2.19. 单元测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-20-_Java实现通过正则表达式提取一段文本中的电子邮件，并将@替换为#输出"><span class="toc-number">1.2.20.</span> <span class="toc-text">1.2.20. Java实现通过正则表达式提取一段文本中的电子邮件，并将@替换为#输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-21-_学习使用常用的Java工具库"><span class="toc-number">1.2.21.</span> <span class="toc-text">1.2.21. 学习使用常用的Java工具库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-22-_什么是API&SPI"><span class="toc-number">1.2.22.</span> <span class="toc-text">1.2.22. 什么是API&SPI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-23-_参考资料"><span class="toc-number">1.2.23.</span> <span class="toc-text">1.2.23. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-_Java并发编程"><span class="toc-number">1.3.</span> <span class="toc-text">1.3. Java并发编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1-_阅读源代码，并学会使用"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.3.1. 阅读源代码，并学会使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-2-_学习使用线程池，自己设计线程池需要注意什么"><span class="toc-number">1.3.2.</span> <span class="toc-text">1.3.2. 学习使用线程池，自己设计线程池需要注意什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-3-_锁"><span class="toc-number">1.3.3.</span> <span class="toc-text">1.3.3. 锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-4-_synchronized的作用是什么，synchronized和lock"><span class="toc-number">1.3.4.</span> <span class="toc-text">1.3.4. synchronized的作用是什么，synchronized和lock</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-5-_sleep和wait"><span class="toc-number">1.3.5.</span> <span class="toc-text">1.3.5. sleep和wait</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-6-_wait和notify"><span class="toc-number">1.3.6.</span> <span class="toc-text">1.3.6. wait和notify</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-7-_写一个死锁的程序"><span class="toc-number">1.3.7.</span> <span class="toc-text">1.3.7. 写一个死锁的程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-8-_什么是守护线程，守护线程和非守护线程的区别以及用法"><span class="toc-number">1.3.8.</span> <span class="toc-text">1.3.8. 什么是守护线程，守护线程和非守护线程的区别以及用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-9-_volatile关键字的理解"><span class="toc-number">1.3.9.</span> <span class="toc-text">1.3.9. volatile关键字的理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-10-_以下代码是不是线程安全？为什么？如果为count加上volatile修饰是否能够做到线程安全？你觉得该怎么做是线程安全的？"><span class="toc-number">1.3.10.</span> <span class="toc-text">1.3.10. 以下代码是不是线程安全？为什么？如果为count加上volatile修饰是否能够做到线程安全？你觉得该怎么做是线程安全的？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-11-_解释一下下面两段代码的差别"><span class="toc-number">1.3.11.</span> <span class="toc-text">1.3.11. 解释一下下面两段代码的差别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-12-_参考资料"><span class="toc-number">1.3.12.</span> <span class="toc-text">1.3.12. 参考资料</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、_进阶篇"><span class="toc-number">2.</span> <span class="toc-text">二、 进阶篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-_Java底层知识"><span class="toc-number">2.1.</span> <span class="toc-text">2.1. Java底层知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-_学习了解字节码、class文件格式"><span class="toc-number">2.1.1.</span> <span class="toc-text">2.1.1. 学习了解字节码、class文件格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-2-_写一个程序要求实现javap的功能（手工完成，不借助ASM等工具）"><span class="toc-number">2.1.2.</span> <span class="toc-text">2.1.2. 写一个程序要求实现javap的功能（手工完成，不借助ASM等工具）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-3-_CPU缓存，L1，L2，L3和伪共享"><span class="toc-number">2.1.3.</span> <span class="toc-text">2.1.3. CPU缓存，L1，L2，L3和伪共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-4-_什么是尾递归"><span class="toc-number">2.1.4.</span> <span class="toc-text">2.1.4. 什么是尾递归</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-5-_熟悉位运算"><span class="toc-number">2.1.5.</span> <span class="toc-text">2.1.5. 熟悉位运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-6-_参考资料"><span class="toc-number">2.1.6.</span> <span class="toc-text">2.1.6. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-_设计模式"><span class="toc-number">2.2.</span> <span class="toc-text">2.2. 设计模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1-_实现AOP"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1. 实现AOP</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CGLIB和InvocationHandler的区别"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">CGLIB和InvocationHandler的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#动态代理模式"><span class="toc-number">2.2.1.2.</span> <span class="toc-text">动态代理模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Javassist实现AOP"><span class="toc-number">2.2.1.3.</span> <span class="toc-text">Javassist实现AOP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ASM实现AOP"><span class="toc-number">2.2.1.4.</span> <span class="toc-text">ASM实现AOP</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2-_使用模板方法设计模式和策略设计模式实现IOC"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2. 使用模板方法设计模式和策略设计模式实现IOC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-3-_不用synchronized和lock，实现线程安全的单例模式"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.2.3. 不用synchronized和lock，实现线程安全的单例模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-4-_nio和reactor设计模式"><span class="toc-number">2.2.4.</span> <span class="toc-text">2.2.4. nio和reactor设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-5-_参考资料"><span class="toc-number">2.2.5.</span> <span class="toc-text">2.2.5. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-_网络编程知识"><span class="toc-number">2.3.</span> <span class="toc-text">2.3. 网络编程知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-1-_Java_RMI，Socket，HttpClient"><span class="toc-number">2.3.1.</span> <span class="toc-text">2.3.1. Java RMI，Socket，HttpClient</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-2-_用Java写一个简单的静态文件的HTTP服务器"><span class="toc-number">2.3.2.</span> <span class="toc-text">2.3.2. 用Java写一个简单的静态文件的HTTP服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-3-_了解nginx和apache服务器的特性并搭建一个对应的服务器"><span class="toc-number">2.3.3.</span> <span class="toc-text">2.3.3. 了解nginx和apache服务器的特性并搭建一个对应的服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-4-_用Java实现FTP、SMTP协议"><span class="toc-number">2.3.4.</span> <span class="toc-text">2.3.4. 用Java实现FTP、SMTP协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-5-_什么是CDN？如果实现？DNS起到什么作用？"><span class="toc-number">2.3.5.</span> <span class="toc-text">2.3.5. 什么是CDN？如果实现？DNS起到什么作用？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-6-_参考资料"><span class="toc-number">2.3.6.</span> <span class="toc-text">2.3.6. 参考资料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-_框架知识"><span class="toc-number">2.3.7.</span> <span class="toc-text">2.4. 框架知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-_应用服务器知识"><span class="toc-number">2.3.8.</span> <span class="toc-text">2.5. 应用服务器知识</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、_高级篇"><span class="toc-number">3.</span> <span class="toc-text">三、 高级篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-_编译原理知识"><span class="toc-number">3.1.</span> <span class="toc-text">3.1. 编译原理知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-_用Java实现以下表达式解析并返回结果（语法和Oracle中的select_sysdate-1_from_dual类似）"><span class="toc-number">3.1.1.</span> <span class="toc-text">3.1.1. 用Java实现以下表达式解析并返回结果（语法和Oracle中的select sysdate-1 from dual类似）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2-_实现对一个List通过DSL筛选"><span class="toc-number">3.1.2.</span> <span class="toc-text">3.1.2. 实现对一个List通过DSL筛选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-3-_用Java实现以下程序（语法和变量作用域处理都和JavaScript类似）："><span class="toc-number">3.1.3.</span> <span class="toc-text">3.1.3. 用Java实现以下程序（语法和变量作用域处理都和JavaScript类似）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-4-_参考资料"><span class="toc-number">3.1.4.</span> <span class="toc-text">3.1.4. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-_操作系统知识"><span class="toc-number">3.2.</span> <span class="toc-text">3.2. 操作系统知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-_数据存储知识"><span class="toc-number">3.3.</span> <span class="toc-text">3.3. 数据存储知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1-_关系型数据库"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1. 关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-2-_NoSQL"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2. NoSQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-3-_参考资料"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.3.3. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-_大数据知识"><span class="toc-number">3.4.</span> <span class="toc-text">3.4. 大数据知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-1-_Zookeeper，在linux上部署zk"><span class="toc-number">3.4.1.</span> <span class="toc-text">3.4.1. Zookeeper，在linux上部署zk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-2-_Solr，Lucene，ElasticSearch"><span class="toc-number">3.4.2.</span> <span class="toc-text">3.4.2. Solr，Lucene，ElasticSearch</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-3-_Storm，流式计算，了解Spark，S4"><span class="toc-number">3.4.3.</span> <span class="toc-text">3.4.3. Storm，流式计算，了解Spark，S4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-4-_Hadoop，离线计算"><span class="toc-number">3.4.4.</span> <span class="toc-text">3.4.4. Hadoop，离线计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-5-_分布式日志收集flume，kafka，logstash"><span class="toc-number">3.4.5.</span> <span class="toc-text">3.4.5. 分布式日志收集flume，kafka，logstash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-6-_数据挖掘，mahout"><span class="toc-number">3.4.6.</span> <span class="toc-text">3.4.6. 数据挖掘，mahout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-7-_参考资料"><span class="toc-number">3.4.7.</span> <span class="toc-text">3.4.7. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-_网络安全知识"><span class="toc-number">3.5.</span> <span class="toc-text">3.5. 网络安全知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-1-_什么是DES、AES"><span class="toc-number">3.5.1.</span> <span class="toc-text">3.5.1. 什么是DES、AES</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-2-_什么是RSA、DSA"><span class="toc-number">3.5.2.</span> <span class="toc-text">3.5.2. 什么是RSA、DSA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-3-_什么是MD5，SHA1"><span class="toc-number">3.5.3.</span> <span class="toc-text">3.5.3. 什么是MD5，SHA1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-4-_什么是SSL、TLS，为什么HTTPS相对比较安全"><span class="toc-number">3.5.4.</span> <span class="toc-text">3.5.4. 什么是SSL、TLS，为什么HTTPS相对比较安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-5-_什么是中间人攻击、如果避免中间人攻击"><span class="toc-number">3.5.5.</span> <span class="toc-text">3.5.5. 什么是中间人攻击、如果避免中间人攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-6-_什么是DOS、DDOS、CC攻击"><span class="toc-number">3.5.6.</span> <span class="toc-text">3.5.6. 什么是DOS、DDOS、CC攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-7-_什么是CSRF攻击"><span class="toc-number">3.5.7.</span> <span class="toc-text">3.5.7. 什么是CSRF攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-8-_什么是CSS攻击"><span class="toc-number">3.5.8.</span> <span class="toc-text">3.5.8. 什么是CSS攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-9-_什么是SQL注入攻击"><span class="toc-number">3.5.9.</span> <span class="toc-text">3.5.9. 什么是SQL注入攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-10-_什么是Hash碰撞拒绝服务攻击"><span class="toc-number">3.5.10.</span> <span class="toc-text">3.5.10. 什么是Hash碰撞拒绝服务攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-11-_了解并学习下面几种增强安全的技术"><span class="toc-number">3.5.11.</span> <span class="toc-text">3.5.11. 了解并学习下面几种增强安全的技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-12-_用openssl签一个证书部署到apache或nginx"><span class="toc-number">3.5.12.</span> <span class="toc-text">3.5.12. 用openssl签一个证书部署到apache或nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-13-_参考资料"><span class="toc-number">3.5.13.</span> <span class="toc-text">3.5.13. 参考资料</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、_扩展篇"><span class="toc-number">4.</span> <span class="toc-text">四、 扩展篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-_相关知识"><span class="toc-number">4.1.</span> <span class="toc-text">4.1. 相关知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1-_云计算，分布式，高可用，可扩展"><span class="toc-number">4.1.1.</span> <span class="toc-text">4.1.1. 云计算，分布式，高可用，可扩展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2-_虚拟化"><span class="toc-number">4.1.2.</span> <span class="toc-text">4.1.2. 虚拟化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-3-_监控"><span class="toc-number">4.1.3.</span> <span class="toc-text">4.1.3. 监控</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-4-_负载均衡"><span class="toc-number">4.1.4.</span> <span class="toc-text">4.1.4. 负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-5-_学习使用git"><span class="toc-number">4.1.5.</span> <span class="toc-text">4.1.5. 学习使用git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-6-_学习使用maven"><span class="toc-number">4.1.6.</span> <span class="toc-text">4.1.6. 学习使用maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-7-_学习使用gradle"><span class="toc-number">4.1.7.</span> <span class="toc-text">4.1.7. 学习使用gradle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-8-_学习一个小语种语言"><span class="toc-number">4.1.8.</span> <span class="toc-text">4.1.8. 学习一个小语种语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-9-_尝试了解编码的本质"><span class="toc-number">4.1.9.</span> <span class="toc-text">4.1.9. 尝试了解编码的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-10-_尝试了解时间的本质"><span class="toc-number">4.1.10.</span> <span class="toc-text">4.1.10. 尝试了解时间的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-11-_参考资料"><span class="toc-number">4.1.11.</span> <span class="toc-text">4.1.11. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-_扩展学习"><span class="toc-number">4.2.</span> <span class="toc-text">4.2. 扩展学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-_JavaScript知识"><span class="toc-number">4.2.1.</span> <span class="toc-text">4.2.1. JavaScript知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-1-_什么是prototype"><span class="toc-number">4.2.2.</span> <span class="toc-text">4.2.1.1. 什么是prototype</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-2-_什么是闭包"><span class="toc-number">4.2.3.</span> <span class="toc-text">4.2.1.2. 什么是闭包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-3-_了解并学习一个JS框架"><span class="toc-number">4.2.4.</span> <span class="toc-text">4.2.1.3. 了解并学习一个JS框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-4-_写一个Greasemonkey插件"><span class="toc-number">4.2.5.</span> <span class="toc-text">4.2.1.4. 写一个Greasemonkey插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-5-_学习node-js"><span class="toc-number">4.2.6.</span> <span class="toc-text">4.2.1.5. 学习node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-2-_学习html5"><span class="toc-number">4.2.7.</span> <span class="toc-text">4.2.2. 学习html5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-3-_参考资料"><span class="toc-number">4.2.8.</span> <span class="toc-text">4.2.3. 参考资料</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、_推荐书籍"><span class="toc-number">5.</span> <span class="toc-text">五、 推荐书籍</span></a></li></ol>
-		</div>
-		
-		<blockquote>
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
 <p>来自：HollisChuang’s Blog</p>
 <p>链接：<a href="http://www.hollischuang.com/archives/489" target="_blank" rel="external">http://www.hollischuang.com/archives/489</a></p>
 </blockquote>
@@ -461,301 +730,402 @@ http://www.jcp.org/en/jsr/detail">
 <p>《代码大全》</p>
 <p>《JavaScript权威指南》</p>
 </blockquote>
-  
-	</div>
-		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/java/">java</a>
-  </div>
-
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/java/">java</a>
-</div>
-
-
-
-<div class="article-share" id="share">
-
-  <div data-url="http://www.dongxiaoxia.xyz/2015/12/24/java00003/" data-title="如何成为一个牛掰的Java大神 | Hello World" data-tsina="null" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
-
-<div class="next">
-<a href="/2015/12/24/java00002/"  title="Java程序员的就业指导">
- <strong>下一篇:</strong><br/> 
- <span>Java程序员的就业指导
-</span>
-</a>
-</div>
-
-</nav>
-
-	
-<section class="comment">
-	<div class="ds-thread"></div>
-</section>
-
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、基础篇"><span class="toc-number">1.</span> <span class="toc-text">一、基础篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1_JVM"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 JVM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1-_Java内存模型，Java内存管理，Java堆和栈，垃圾回收"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2-_了解JVM各种参数及调优"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.1.2. 了解JVM各种参数及调优</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-3-_学习使用Java工具"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.1.3. 学习使用Java工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-4-_学习Java诊断工具"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.1.4. 学习Java诊断工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-5-_自己编写各种outofmemory，stackoverflow程序"><span class="toc-number">1.1.5.</span> <span class="toc-text">1.1.5. 自己编写各种outofmemory，stackoverflow程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-6-_使用工具尝试解决以下问题，并写下总结"><span class="toc-number">1.1.6.</span> <span class="toc-text">1.1.6. 使用工具尝试解决以下问题，并写下总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-7-_参考资料"><span class="toc-number">1.1.7.</span> <span class="toc-text">1.1.7. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-_Java基础知识"><span class="toc-number">1.2.</span> <span class="toc-text">1.2. Java基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-_阅读源代码"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.2.1. 阅读源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-_熟悉Java中各种变量类型"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2.2. 熟悉Java中各种变量类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-_熟悉Java_String的使用，熟悉String的各种函数"><span class="toc-number">1.2.3.</span> <span class="toc-text">1.2.3. 熟悉Java String的使用，熟悉String的各种函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-4-_熟悉Java中各种关键字"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.2.4. 熟悉Java中各种关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-5-_学会使用List，Map，Stack，Queue，Set"><span class="toc-number">1.2.5.</span> <span class="toc-text">1.2.5. 学会使用List，Map，Stack，Queue，Set</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-6-_Java_IO&Java_NIO，并学会使用"><span class="toc-number">1.2.6.</span> <span class="toc-text">1.2.6. Java IO&Java NIO，并学会使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-7-_Java反射与javassist"><span class="toc-number">1.2.7.</span> <span class="toc-text">1.2.7. Java反射与javassist</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-8-_Java序列化"><span class="toc-number">1.2.8.</span> <span class="toc-text">1.2.8. Java序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-9-_虚引用，弱引用，软引用"><span class="toc-number">1.2.9.</span> <span class="toc-text">1.2.9. 虚引用，弱引用，软引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-10-_熟悉Java系统属性"><span class="toc-number">1.2.10.</span> <span class="toc-text">1.2.10. 熟悉Java系统属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-11-_熟悉Annotation用法"><span class="toc-number">1.2.11.</span> <span class="toc-text">1.2.11. 熟悉Annotation用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-12-_JMS"><span class="toc-number">1.2.12.</span> <span class="toc-text">1.2.12. JMS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-13-_JMX"><span class="toc-number">1.2.13.</span> <span class="toc-text">1.2.13. JMX</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-14-_泛型和继承，泛型和擦除"><span class="toc-number">1.2.14.</span> <span class="toc-text">1.2.14. 泛型和继承，泛型和擦除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-15-_自动拆箱装箱与字节码"><span class="toc-number">1.2.15.</span> <span class="toc-text">1.2.15. 自动拆箱装箱与字节码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-16-_实现Callback"><span class="toc-number">1.2.16.</span> <span class="toc-text">1.2.16. 实现Callback</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-17-_java-lang-Void类使用"><span class="toc-number">1.2.17.</span> <span class="toc-text">1.2.17. java.lang.Void类使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-18-_Java_Agent，premain函数"><span class="toc-number">1.2.18.</span> <span class="toc-text">1.2.18. Java Agent，premain函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-19-_单元测试"><span class="toc-number">1.2.19.</span> <span class="toc-text">1.2.19. 单元测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-20-_Java实现通过正则表达式提取一段文本中的电子邮件，并将@替换为#输出"><span class="toc-number">1.2.20.</span> <span class="toc-text">1.2.20. Java实现通过正则表达式提取一段文本中的电子邮件，并将@替换为#输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-21-_学习使用常用的Java工具库"><span class="toc-number">1.2.21.</span> <span class="toc-text">1.2.21. 学习使用常用的Java工具库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-22-_什么是API&SPI"><span class="toc-number">1.2.22.</span> <span class="toc-text">1.2.22. 什么是API&SPI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-23-_参考资料"><span class="toc-number">1.2.23.</span> <span class="toc-text">1.2.23. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-_Java并发编程"><span class="toc-number">1.3.</span> <span class="toc-text">1.3. Java并发编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1-_阅读源代码，并学会使用"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.3.1. 阅读源代码，并学会使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-2-_学习使用线程池，自己设计线程池需要注意什么"><span class="toc-number">1.3.2.</span> <span class="toc-text">1.3.2. 学习使用线程池，自己设计线程池需要注意什么</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-3-_锁"><span class="toc-number">1.3.3.</span> <span class="toc-text">1.3.3. 锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-4-_synchronized的作用是什么，synchronized和lock"><span class="toc-number">1.3.4.</span> <span class="toc-text">1.3.4. synchronized的作用是什么，synchronized和lock</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-5-_sleep和wait"><span class="toc-number">1.3.5.</span> <span class="toc-text">1.3.5. sleep和wait</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-6-_wait和notify"><span class="toc-number">1.3.6.</span> <span class="toc-text">1.3.6. wait和notify</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-7-_写一个死锁的程序"><span class="toc-number">1.3.7.</span> <span class="toc-text">1.3.7. 写一个死锁的程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-8-_什么是守护线程，守护线程和非守护线程的区别以及用法"><span class="toc-number">1.3.8.</span> <span class="toc-text">1.3.8. 什么是守护线程，守护线程和非守护线程的区别以及用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-9-_volatile关键字的理解"><span class="toc-number">1.3.9.</span> <span class="toc-text">1.3.9. volatile关键字的理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-10-_以下代码是不是线程安全？为什么？如果为count加上volatile修饰是否能够做到线程安全？你觉得该怎么做是线程安全的？"><span class="toc-number">1.3.10.</span> <span class="toc-text">1.3.10. 以下代码是不是线程安全？为什么？如果为count加上volatile修饰是否能够做到线程安全？你觉得该怎么做是线程安全的？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-11-_解释一下下面两段代码的差别"><span class="toc-number">1.3.11.</span> <span class="toc-text">1.3.11. 解释一下下面两段代码的差别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-12-_参考资料"><span class="toc-number">1.3.12.</span> <span class="toc-text">1.3.12. 参考资料</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、_进阶篇"><span class="toc-number">2.</span> <span class="toc-text">二、 进阶篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-_Java底层知识"><span class="toc-number">2.1.</span> <span class="toc-text">2.1. Java底层知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-1-_学习了解字节码、class文件格式"><span class="toc-number">2.1.1.</span> <span class="toc-text">2.1.1. 学习了解字节码、class文件格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-2-_写一个程序要求实现javap的功能（手工完成，不借助ASM等工具）"><span class="toc-number">2.1.2.</span> <span class="toc-text">2.1.2. 写一个程序要求实现javap的功能（手工完成，不借助ASM等工具）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-3-_CPU缓存，L1，L2，L3和伪共享"><span class="toc-number">2.1.3.</span> <span class="toc-text">2.1.3. CPU缓存，L1，L2，L3和伪共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-4-_什么是尾递归"><span class="toc-number">2.1.4.</span> <span class="toc-text">2.1.4. 什么是尾递归</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-5-_熟悉位运算"><span class="toc-number">2.1.5.</span> <span class="toc-text">2.1.5. 熟悉位运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-6-_参考资料"><span class="toc-number">2.1.6.</span> <span class="toc-text">2.1.6. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-_设计模式"><span class="toc-number">2.2.</span> <span class="toc-text">2.2. 设计模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1-_实现AOP"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1. 实现AOP</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CGLIB和InvocationHandler的区别"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">CGLIB和InvocationHandler的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#动态代理模式"><span class="toc-number">2.2.1.2.</span> <span class="toc-text">动态代理模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Javassist实现AOP"><span class="toc-number">2.2.1.3.</span> <span class="toc-text">Javassist实现AOP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ASM实现AOP"><span class="toc-number">2.2.1.4.</span> <span class="toc-text">ASM实现AOP</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2-_使用模板方法设计模式和策略设计模式实现IOC"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2. 使用模板方法设计模式和策略设计模式实现IOC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-3-_不用synchronized和lock，实现线程安全的单例模式"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.2.3. 不用synchronized和lock，实现线程安全的单例模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-4-_nio和reactor设计模式"><span class="toc-number">2.2.4.</span> <span class="toc-text">2.2.4. nio和reactor设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-5-_参考资料"><span class="toc-number">2.2.5.</span> <span class="toc-text">2.2.5. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-_网络编程知识"><span class="toc-number">2.3.</span> <span class="toc-text">2.3. 网络编程知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-1-_Java_RMI，Socket，HttpClient"><span class="toc-number">2.3.1.</span> <span class="toc-text">2.3.1. Java RMI，Socket，HttpClient</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-2-_用Java写一个简单的静态文件的HTTP服务器"><span class="toc-number">2.3.2.</span> <span class="toc-text">2.3.2. 用Java写一个简单的静态文件的HTTP服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-3-_了解nginx和apache服务器的特性并搭建一个对应的服务器"><span class="toc-number">2.3.3.</span> <span class="toc-text">2.3.3. 了解nginx和apache服务器的特性并搭建一个对应的服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-4-_用Java实现FTP、SMTP协议"><span class="toc-number">2.3.4.</span> <span class="toc-text">2.3.4. 用Java实现FTP、SMTP协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-5-_什么是CDN？如果实现？DNS起到什么作用？"><span class="toc-number">2.3.5.</span> <span class="toc-text">2.3.5. 什么是CDN？如果实现？DNS起到什么作用？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-6-_参考资料"><span class="toc-number">2.3.6.</span> <span class="toc-text">2.3.6. 参考资料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-_框架知识"><span class="toc-number">2.3.7.</span> <span class="toc-text">2.4. 框架知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-_应用服务器知识"><span class="toc-number">2.3.8.</span> <span class="toc-text">2.5. 应用服务器知识</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、_高级篇"><span class="toc-number">3.</span> <span class="toc-text">三、 高级篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-_编译原理知识"><span class="toc-number">3.1.</span> <span class="toc-text">3.1. 编译原理知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-_用Java实现以下表达式解析并返回结果（语法和Oracle中的select_sysdate-1_from_dual类似）"><span class="toc-number">3.1.1.</span> <span class="toc-text">3.1.1. 用Java实现以下表达式解析并返回结果（语法和Oracle中的select sysdate-1 from dual类似）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2-_实现对一个List通过DSL筛选"><span class="toc-number">3.1.2.</span> <span class="toc-text">3.1.2. 实现对一个List通过DSL筛选</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-3-_用Java实现以下程序（语法和变量作用域处理都和JavaScript类似）："><span class="toc-number">3.1.3.</span> <span class="toc-text">3.1.3. 用Java实现以下程序（语法和变量作用域处理都和JavaScript类似）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-4-_参考资料"><span class="toc-number">3.1.4.</span> <span class="toc-text">3.1.4. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-_操作系统知识"><span class="toc-number">3.2.</span> <span class="toc-text">3.2. 操作系统知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-_数据存储知识"><span class="toc-number">3.3.</span> <span class="toc-text">3.3. 数据存储知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1-_关系型数据库"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1. 关系型数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-2-_NoSQL"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2. NoSQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-3-_参考资料"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.3.3. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-_大数据知识"><span class="toc-number">3.4.</span> <span class="toc-text">3.4. 大数据知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-1-_Zookeeper，在linux上部署zk"><span class="toc-number">3.4.1.</span> <span class="toc-text">3.4.1. Zookeeper，在linux上部署zk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-2-_Solr，Lucene，ElasticSearch"><span class="toc-number">3.4.2.</span> <span class="toc-text">3.4.2. Solr，Lucene，ElasticSearch</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-3-_Storm，流式计算，了解Spark，S4"><span class="toc-number">3.4.3.</span> <span class="toc-text">3.4.3. Storm，流式计算，了解Spark，S4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-4-_Hadoop，离线计算"><span class="toc-number">3.4.4.</span> <span class="toc-text">3.4.4. Hadoop，离线计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-5-_分布式日志收集flume，kafka，logstash"><span class="toc-number">3.4.5.</span> <span class="toc-text">3.4.5. 分布式日志收集flume，kafka，logstash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-6-_数据挖掘，mahout"><span class="toc-number">3.4.6.</span> <span class="toc-text">3.4.6. 数据挖掘，mahout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-7-_参考资料"><span class="toc-number">3.4.7.</span> <span class="toc-text">3.4.7. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-_网络安全知识"><span class="toc-number">3.5.</span> <span class="toc-text">3.5. 网络安全知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-1-_什么是DES、AES"><span class="toc-number">3.5.1.</span> <span class="toc-text">3.5.1. 什么是DES、AES</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-2-_什么是RSA、DSA"><span class="toc-number">3.5.2.</span> <span class="toc-text">3.5.2. 什么是RSA、DSA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-3-_什么是MD5，SHA1"><span class="toc-number">3.5.3.</span> <span class="toc-text">3.5.3. 什么是MD5，SHA1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-4-_什么是SSL、TLS，为什么HTTPS相对比较安全"><span class="toc-number">3.5.4.</span> <span class="toc-text">3.5.4. 什么是SSL、TLS，为什么HTTPS相对比较安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-5-_什么是中间人攻击、如果避免中间人攻击"><span class="toc-number">3.5.5.</span> <span class="toc-text">3.5.5. 什么是中间人攻击、如果避免中间人攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-6-_什么是DOS、DDOS、CC攻击"><span class="toc-number">3.5.6.</span> <span class="toc-text">3.5.6. 什么是DOS、DDOS、CC攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-7-_什么是CSRF攻击"><span class="toc-number">3.5.7.</span> <span class="toc-text">3.5.7. 什么是CSRF攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-8-_什么是CSS攻击"><span class="toc-number">3.5.8.</span> <span class="toc-text">3.5.8. 什么是CSS攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-9-_什么是SQL注入攻击"><span class="toc-number">3.5.9.</span> <span class="toc-text">3.5.9. 什么是SQL注入攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-10-_什么是Hash碰撞拒绝服务攻击"><span class="toc-number">3.5.10.</span> <span class="toc-text">3.5.10. 什么是Hash碰撞拒绝服务攻击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-11-_了解并学习下面几种增强安全的技术"><span class="toc-number">3.5.11.</span> <span class="toc-text">3.5.11. 了解并学习下面几种增强安全的技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-12-_用openssl签一个证书部署到apache或nginx"><span class="toc-number">3.5.12.</span> <span class="toc-text">3.5.12. 用openssl签一个证书部署到apache或nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-13-_参考资料"><span class="toc-number">3.5.13.</span> <span class="toc-text">3.5.13. 参考资料</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、_扩展篇"><span class="toc-number">4.</span> <span class="toc-text">四、 扩展篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-_相关知识"><span class="toc-number">4.1.</span> <span class="toc-text">4.1. 相关知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-1-_云计算，分布式，高可用，可扩展"><span class="toc-number">4.1.1.</span> <span class="toc-text">4.1.1. 云计算，分布式，高可用，可扩展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-2-_虚拟化"><span class="toc-number">4.1.2.</span> <span class="toc-text">4.1.2. 虚拟化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-3-_监控"><span class="toc-number">4.1.3.</span> <span class="toc-text">4.1.3. 监控</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-4-_负载均衡"><span class="toc-number">4.1.4.</span> <span class="toc-text">4.1.4. 负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-5-_学习使用git"><span class="toc-number">4.1.5.</span> <span class="toc-text">4.1.5. 学习使用git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-6-_学习使用maven"><span class="toc-number">4.1.6.</span> <span class="toc-text">4.1.6. 学习使用maven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-7-_学习使用gradle"><span class="toc-number">4.1.7.</span> <span class="toc-text">4.1.7. 学习使用gradle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-8-_学习一个小语种语言"><span class="toc-number">4.1.8.</span> <span class="toc-text">4.1.8. 学习一个小语种语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-9-_尝试了解编码的本质"><span class="toc-number">4.1.9.</span> <span class="toc-text">4.1.9. 尝试了解编码的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-10-_尝试了解时间的本质"><span class="toc-number">4.1.10.</span> <span class="toc-text">4.1.10. 尝试了解时间的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-11-_参考资料"><span class="toc-number">4.1.11.</span> <span class="toc-text">4.1.11. 参考资料</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-_扩展学习"><span class="toc-number">4.2.</span> <span class="toc-text">4.2. 扩展学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-_JavaScript知识"><span class="toc-number">4.2.1.</span> <span class="toc-text">4.2.1. JavaScript知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-1-_什么是prototype"><span class="toc-number">4.2.2.</span> <span class="toc-text">4.2.1.1. 什么是prototype</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-2-_什么是闭包"><span class="toc-number">4.2.3.</span> <span class="toc-text">4.2.1.2. 什么是闭包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-3-_了解并学习一个JS框架"><span class="toc-number">4.2.4.</span> <span class="toc-text">4.2.1.3. 了解并学习一个JS框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-4-_写一个Greasemonkey插件"><span class="toc-number">4.2.5.</span> <span class="toc-text">4.2.1.4. 写一个Greasemonkey插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-1-5-_学习node-js"><span class="toc-number">4.2.6.</span> <span class="toc-text">4.2.1.5. 学习node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-2-_学习html5"><span class="toc-number">4.2.7.</span> <span class="toc-text">4.2.2. 学习html5</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-3-_参考资料"><span class="toc-number">4.2.8.</span> <span class="toc-text">4.2.3. 参考资料</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、_推荐书籍"><span class="toc-number">5.</span> <span class="toc-text">五、 推荐书籍</span></a></li></ol>
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
-<aside class="clearfix">
-
-  
-<div class="categorieslist">
-	<p class="asidetitle">分类</p>
-		<ul>
-		
-			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>2</sup></a></li>
-		
-			<li><a href="/categories/Java/" title="Java">Java<sup>1</sup></a></li>
-		
-			<li><a href="/categories/Spring/" title="Spring">Spring<sup>1</sup></a></li>
-		
-			<li><a href="/categories/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-		
-			<li><a href="/categories/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/categories/java/" title="java">java<sup>2</sup></a></li>
-		
-		</ul>
-</div>
-
-
-  
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>2</sup></a></li>
-		
-			<li><a href="/tags/Java/" title="Java">Java<sup>1</sup></a></li>
-		
-			<li><a href="/tags/Spring/" title="Spring">Spring<sup>1</sup></a></li>
-		
-			<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-		
-			<li><a href="/tags/html/" title="html">html<sup>1</sup></a></li>
-		
-			<li><a href="/tags/html5/" title="html5">html5<sup>1</sup></a></li>
-		
-			<li><a href="/tags/java/" title="java">java<sup>2</sup></a></li>
-		
-		</ul>
-</div>
-
-
-  
-  <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">4</span></li></ul>
-  </div>
-
-
-  
-  <div class="tagcloudlist">
-    <p class="asidetitle">标签云</p>
-    <div class="tagcloudlist clearfix">
-       <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Spring/" style="font-size: 10px;">Spring</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/java/" style="font-size: 20px;">java</a>
-    </div>
-  </div>
-
-
-  <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
-    <ul>
-      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
-      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
-    </ul>
-</div>
-
-
-  <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<section class="info">
-		<p> Hello ,I&#39;m dongxiaoxia. <br/>
-			This is my blog,believe it or not.</p>
-	</section>
-	 
-	<div class="social-font clearfix">
-		
-		
-		
-		<a href="https://github.com/dongxiaoxia" target="_blank" title="github"></a>
-		
-		
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2015 
-		
-		<a href="http://www.dongxiaoxia.xyz" target="_blank" title="东小侠">东小侠</a>
-		
-		</p>
-		<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install','LEW-HJ8C4q4d2iL3MKNA','2.0.0');
-</script>
-
-</div>
-</footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
       
-      $('#toc.toc-aside').css('display', 'none');
+    </div>
+    
+    <div>
+      
         
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/24/java00002/" rel="next" title="Java程序员的就业指导">
+                <i class="fa fa-chevron-left"></i> Java程序员的就业指导
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/23/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/12/24/java00003/"
+           data-title="如何成为一个牛掰的Java大神" data-url="http://www.dongxiaoxia.xyz/2015/12/24/java00003/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="东小侠" />
+          <p class="site-author-name" itemprop="name">东小侠</p>
+          <p class="site-description motion-element" itemprop="description">怕什么真理无穷 进一寸有进一寸的欢喜</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础篇"><span class="nav-number">1.</span> <span class="nav-text">一、基础篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1_JVM"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 JVM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-_Java内存模型，Java内存管理，Java堆和栈，垃圾回收"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2-_了解JVM各种参数及调优"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2. 了解JVM各种参数及调优</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-3-_学习使用Java工具"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.1.3. 学习使用Java工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-4-_学习Java诊断工具"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.1.4. 学习Java诊断工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-5-_自己编写各种outofmemory，stackoverflow程序"><span class="nav-number">1.1.5.</span> <span class="nav-text">1.1.5. 自己编写各种outofmemory，stackoverflow程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-6-_使用工具尝试解决以下问题，并写下总结"><span class="nav-number">1.1.6.</span> <span class="nav-text">1.1.6. 使用工具尝试解决以下问题，并写下总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-7-_参考资料"><span class="nav-number">1.1.7.</span> <span class="nav-text">1.1.7. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-_Java基础知识"><span class="nav-number">1.2.</span> <span class="nav-text">1.2. Java基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-_阅读源代码"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1. 阅读源代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-2-_熟悉Java中各种变量类型"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2.2. 熟悉Java中各种变量类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-3-_熟悉Java_String的使用，熟悉String的各种函数"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.2.3. 熟悉Java String的使用，熟悉String的各种函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-4-_熟悉Java中各种关键字"><span class="nav-number">1.2.4.</span> <span class="nav-text">1.2.4. 熟悉Java中各种关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-5-_学会使用List，Map，Stack，Queue，Set"><span class="nav-number">1.2.5.</span> <span class="nav-text">1.2.5. 学会使用List，Map，Stack，Queue，Set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-6-_Java_IO&Java_NIO，并学会使用"><span class="nav-number">1.2.6.</span> <span class="nav-text">1.2.6. Java IO&Java NIO，并学会使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-7-_Java反射与javassist"><span class="nav-number">1.2.7.</span> <span class="nav-text">1.2.7. Java反射与javassist</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-8-_Java序列化"><span class="nav-number">1.2.8.</span> <span class="nav-text">1.2.8. Java序列化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-9-_虚引用，弱引用，软引用"><span class="nav-number">1.2.9.</span> <span class="nav-text">1.2.9. 虚引用，弱引用，软引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-10-_熟悉Java系统属性"><span class="nav-number">1.2.10.</span> <span class="nav-text">1.2.10. 熟悉Java系统属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-11-_熟悉Annotation用法"><span class="nav-number">1.2.11.</span> <span class="nav-text">1.2.11. 熟悉Annotation用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-12-_JMS"><span class="nav-number">1.2.12.</span> <span class="nav-text">1.2.12. JMS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-13-_JMX"><span class="nav-number">1.2.13.</span> <span class="nav-text">1.2.13. JMX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-14-_泛型和继承，泛型和擦除"><span class="nav-number">1.2.14.</span> <span class="nav-text">1.2.14. 泛型和继承，泛型和擦除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-15-_自动拆箱装箱与字节码"><span class="nav-number">1.2.15.</span> <span class="nav-text">1.2.15. 自动拆箱装箱与字节码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-16-_实现Callback"><span class="nav-number">1.2.16.</span> <span class="nav-text">1.2.16. 实现Callback</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-17-_java-lang-Void类使用"><span class="nav-number">1.2.17.</span> <span class="nav-text">1.2.17. java.lang.Void类使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-18-_Java_Agent，premain函数"><span class="nav-number">1.2.18.</span> <span class="nav-text">1.2.18. Java Agent，premain函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-19-_单元测试"><span class="nav-number">1.2.19.</span> <span class="nav-text">1.2.19. 单元测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-20-_Java实现通过正则表达式提取一段文本中的电子邮件，并将@替换为#输出"><span class="nav-number">1.2.20.</span> <span class="nav-text">1.2.20. Java实现通过正则表达式提取一段文本中的电子邮件，并将@替换为#输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-21-_学习使用常用的Java工具库"><span class="nav-number">1.2.21.</span> <span class="nav-text">1.2.21. 学习使用常用的Java工具库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-22-_什么是API&SPI"><span class="nav-number">1.2.22.</span> <span class="nav-text">1.2.22. 什么是API&SPI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-23-_参考资料"><span class="nav-number">1.2.23.</span> <span class="nav-text">1.2.23. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-_Java并发编程"><span class="nav-number">1.3.</span> <span class="nav-text">1.3. Java并发编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-1-_阅读源代码，并学会使用"><span class="nav-number">1.3.1.</span> <span class="nav-text">1.3.1. 阅读源代码，并学会使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-_学习使用线程池，自己设计线程池需要注意什么"><span class="nav-number">1.3.2.</span> <span class="nav-text">1.3.2. 学习使用线程池，自己设计线程池需要注意什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-3-_锁"><span class="nav-number">1.3.3.</span> <span class="nav-text">1.3.3. 锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-4-_synchronized的作用是什么，synchronized和lock"><span class="nav-number">1.3.4.</span> <span class="nav-text">1.3.4. synchronized的作用是什么，synchronized和lock</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-5-_sleep和wait"><span class="nav-number">1.3.5.</span> <span class="nav-text">1.3.5. sleep和wait</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-6-_wait和notify"><span class="nav-number">1.3.6.</span> <span class="nav-text">1.3.6. wait和notify</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-7-_写一个死锁的程序"><span class="nav-number">1.3.7.</span> <span class="nav-text">1.3.7. 写一个死锁的程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-8-_什么是守护线程，守护线程和非守护线程的区别以及用法"><span class="nav-number">1.3.8.</span> <span class="nav-text">1.3.8. 什么是守护线程，守护线程和非守护线程的区别以及用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-9-_volatile关键字的理解"><span class="nav-number">1.3.9.</span> <span class="nav-text">1.3.9. volatile关键字的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-10-_以下代码是不是线程安全？为什么？如果为count加上volatile修饰是否能够做到线程安全？你觉得该怎么做是线程安全的？"><span class="nav-number">1.3.10.</span> <span class="nav-text">1.3.10. 以下代码是不是线程安全？为什么？如果为count加上volatile修饰是否能够做到线程安全？你觉得该怎么做是线程安全的？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-11-_解释一下下面两段代码的差别"><span class="nav-number">1.3.11.</span> <span class="nav-text">1.3.11. 解释一下下面两段代码的差别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-12-_参考资料"><span class="nav-number">1.3.12.</span> <span class="nav-text">1.3.12. 参考资料</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、_进阶篇"><span class="nav-number">2.</span> <span class="nav-text">二、 进阶篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-_Java底层知识"><span class="nav-number">2.1.</span> <span class="nav-text">2.1. Java底层知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-_学习了解字节码、class文件格式"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1. 学习了解字节码、class文件格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-_写一个程序要求实现javap的功能（手工完成，不借助ASM等工具）"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.1.2. 写一个程序要求实现javap的功能（手工完成，不借助ASM等工具）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-_CPU缓存，L1，L2，L3和伪共享"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.1.3. CPU缓存，L1，L2，L3和伪共享</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-4-_什么是尾递归"><span class="nav-number">2.1.4.</span> <span class="nav-text">2.1.4. 什么是尾递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-5-_熟悉位运算"><span class="nav-number">2.1.5.</span> <span class="nav-text">2.1.5. 熟悉位运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-6-_参考资料"><span class="nav-number">2.1.6.</span> <span class="nav-text">2.1.6. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-_设计模式"><span class="nav-number">2.2.</span> <span class="nav-text">2.2. 设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-_实现AOP"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1. 实现AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#CGLIB和InvocationHandler的区别"><span class="nav-number">2.2.1.1.</span> <span class="nav-text">CGLIB和InvocationHandler的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态代理模式"><span class="nav-number">2.2.1.2.</span> <span class="nav-text">动态代理模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Javassist实现AOP"><span class="nav-number">2.2.1.3.</span> <span class="nav-text">Javassist实现AOP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ASM实现AOP"><span class="nav-number">2.2.1.4.</span> <span class="nav-text">ASM实现AOP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-_使用模板方法设计模式和策略设计模式实现IOC"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2.2. 使用模板方法设计模式和策略设计模式实现IOC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3-_不用synchronized和lock，实现线程安全的单例模式"><span class="nav-number">2.2.3.</span> <span class="nav-text">2.2.3. 不用synchronized和lock，实现线程安全的单例模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-4-_nio和reactor设计模式"><span class="nav-number">2.2.4.</span> <span class="nav-text">2.2.4. nio和reactor设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-5-_参考资料"><span class="nav-number">2.2.5.</span> <span class="nav-text">2.2.5. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-_网络编程知识"><span class="nav-number">2.3.</span> <span class="nav-text">2.3. 网络编程知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-1-_Java_RMI，Socket，HttpClient"><span class="nav-number">2.3.1.</span> <span class="nav-text">2.3.1. Java RMI，Socket，HttpClient</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-2-_用Java写一个简单的静态文件的HTTP服务器"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.3.2. 用Java写一个简单的静态文件的HTTP服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-3-_了解nginx和apache服务器的特性并搭建一个对应的服务器"><span class="nav-number">2.3.3.</span> <span class="nav-text">2.3.3. 了解nginx和apache服务器的特性并搭建一个对应的服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-4-_用Java实现FTP、SMTP协议"><span class="nav-number">2.3.4.</span> <span class="nav-text">2.3.4. 用Java实现FTP、SMTP协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-5-_什么是CDN？如果实现？DNS起到什么作用？"><span class="nav-number">2.3.5.</span> <span class="nav-text">2.3.5. 什么是CDN？如果实现？DNS起到什么作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-6-_参考资料"><span class="nav-number">2.3.6.</span> <span class="nav-text">2.3.6. 参考资料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-_框架知识"><span class="nav-number">2.3.7.</span> <span class="nav-text">2.4. 框架知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-_应用服务器知识"><span class="nav-number">2.3.8.</span> <span class="nav-text">2.5. 应用服务器知识</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、_高级篇"><span class="nav-number">3.</span> <span class="nav-text">三、 高级篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-_编译原理知识"><span class="nav-number">3.1.</span> <span class="nav-text">3.1. 编译原理知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-1-_用Java实现以下表达式解析并返回结果（语法和Oracle中的select_sysdate-1_from_dual类似）"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1. 用Java实现以下表达式解析并返回结果（语法和Oracle中的select sysdate-1 from dual类似）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-2-_实现对一个List通过DSL筛选"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2. 实现对一个List通过DSL筛选</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-3-_用Java实现以下程序（语法和变量作用域处理都和JavaScript类似）："><span class="nav-number">3.1.3.</span> <span class="nav-text">3.1.3. 用Java实现以下程序（语法和变量作用域处理都和JavaScript类似）：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-4-_参考资料"><span class="nav-number">3.1.4.</span> <span class="nav-text">3.1.4. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-_操作系统知识"><span class="nav-number">3.2.</span> <span class="nav-text">3.2. 操作系统知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-_数据存储知识"><span class="nav-number">3.3.</span> <span class="nav-text">3.3. 数据存储知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-1-_关系型数据库"><span class="nav-number">3.3.1.</span> <span class="nav-text">3.3.1. 关系型数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-_NoSQL"><span class="nav-number">3.3.2.</span> <span class="nav-text">3.3.2. NoSQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-3-_参考资料"><span class="nav-number">3.3.3.</span> <span class="nav-text">3.3.3. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-_大数据知识"><span class="nav-number">3.4.</span> <span class="nav-text">3.4. 大数据知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-1-_Zookeeper，在linux上部署zk"><span class="nav-number">3.4.1.</span> <span class="nav-text">3.4.1. Zookeeper，在linux上部署zk</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-2-_Solr，Lucene，ElasticSearch"><span class="nav-number">3.4.2.</span> <span class="nav-text">3.4.2. Solr，Lucene，ElasticSearch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-3-_Storm，流式计算，了解Spark，S4"><span class="nav-number">3.4.3.</span> <span class="nav-text">3.4.3. Storm，流式计算，了解Spark，S4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-4-_Hadoop，离线计算"><span class="nav-number">3.4.4.</span> <span class="nav-text">3.4.4. Hadoop，离线计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-5-_分布式日志收集flume，kafka，logstash"><span class="nav-number">3.4.5.</span> <span class="nav-text">3.4.5. 分布式日志收集flume，kafka，logstash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-6-_数据挖掘，mahout"><span class="nav-number">3.4.6.</span> <span class="nav-text">3.4.6. 数据挖掘，mahout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-7-_参考资料"><span class="nav-number">3.4.7.</span> <span class="nav-text">3.4.7. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-_网络安全知识"><span class="nav-number">3.5.</span> <span class="nav-text">3.5. 网络安全知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-1-_什么是DES、AES"><span class="nav-number">3.5.1.</span> <span class="nav-text">3.5.1. 什么是DES、AES</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-2-_什么是RSA、DSA"><span class="nav-number">3.5.2.</span> <span class="nav-text">3.5.2. 什么是RSA、DSA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-3-_什么是MD5，SHA1"><span class="nav-number">3.5.3.</span> <span class="nav-text">3.5.3. 什么是MD5，SHA1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-4-_什么是SSL、TLS，为什么HTTPS相对比较安全"><span class="nav-number">3.5.4.</span> <span class="nav-text">3.5.4. 什么是SSL、TLS，为什么HTTPS相对比较安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-5-_什么是中间人攻击、如果避免中间人攻击"><span class="nav-number">3.5.5.</span> <span class="nav-text">3.5.5. 什么是中间人攻击、如果避免中间人攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-6-_什么是DOS、DDOS、CC攻击"><span class="nav-number">3.5.6.</span> <span class="nav-text">3.5.6. 什么是DOS、DDOS、CC攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-7-_什么是CSRF攻击"><span class="nav-number">3.5.7.</span> <span class="nav-text">3.5.7. 什么是CSRF攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-8-_什么是CSS攻击"><span class="nav-number">3.5.8.</span> <span class="nav-text">3.5.8. 什么是CSS攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-9-_什么是SQL注入攻击"><span class="nav-number">3.5.9.</span> <span class="nav-text">3.5.9. 什么是SQL注入攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-10-_什么是Hash碰撞拒绝服务攻击"><span class="nav-number">3.5.10.</span> <span class="nav-text">3.5.10. 什么是Hash碰撞拒绝服务攻击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-11-_了解并学习下面几种增强安全的技术"><span class="nav-number">3.5.11.</span> <span class="nav-text">3.5.11. 了解并学习下面几种增强安全的技术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-12-_用openssl签一个证书部署到apache或nginx"><span class="nav-number">3.5.12.</span> <span class="nav-text">3.5.12. 用openssl签一个证书部署到apache或nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-13-_参考资料"><span class="nav-number">3.5.13.</span> <span class="nav-text">3.5.13. 参考资料</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、_扩展篇"><span class="nav-number">4.</span> <span class="nav-text">四、 扩展篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-_相关知识"><span class="nav-number">4.1.</span> <span class="nav-text">4.1. 相关知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-_云计算，分布式，高可用，可扩展"><span class="nav-number">4.1.1.</span> <span class="nav-text">4.1.1. 云计算，分布式，高可用，可扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-2-_虚拟化"><span class="nav-number">4.1.2.</span> <span class="nav-text">4.1.2. 虚拟化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-3-_监控"><span class="nav-number">4.1.3.</span> <span class="nav-text">4.1.3. 监控</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-4-_负载均衡"><span class="nav-number">4.1.4.</span> <span class="nav-text">4.1.4. 负载均衡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-5-_学习使用git"><span class="nav-number">4.1.5.</span> <span class="nav-text">4.1.5. 学习使用git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-6-_学习使用maven"><span class="nav-number">4.1.6.</span> <span class="nav-text">4.1.6. 学习使用maven</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-7-_学习使用gradle"><span class="nav-number">4.1.7.</span> <span class="nav-text">4.1.7. 学习使用gradle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-8-_学习一个小语种语言"><span class="nav-number">4.1.8.</span> <span class="nav-text">4.1.8. 学习一个小语种语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-9-_尝试了解编码的本质"><span class="nav-number">4.1.9.</span> <span class="nav-text">4.1.9. 尝试了解编码的本质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-10-_尝试了解时间的本质"><span class="nav-number">4.1.10.</span> <span class="nav-text">4.1.10. 尝试了解时间的本质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-11-_参考资料"><span class="nav-number">4.1.11.</span> <span class="nav-text">4.1.11. 参考资料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-_扩展学习"><span class="nav-number">4.2.</span> <span class="nav-text">4.2. 扩展学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-_JavaScript知识"><span class="nav-number">4.2.1.</span> <span class="nav-text">4.2.1. JavaScript知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-1-_什么是prototype"><span class="nav-number">4.2.2.</span> <span class="nav-text">4.2.1.1. 什么是prototype</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-2-_什么是闭包"><span class="nav-number">4.2.3.</span> <span class="nav-text">4.2.1.2. 什么是闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-3-_了解并学习一个JS框架"><span class="nav-number">4.2.4.</span> <span class="nav-text">4.2.1.3. 了解并学习一个JS框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-4-_写一个Greasemonkey插件"><span class="nav-number">4.2.5.</span> <span class="nav-text">4.2.1.4. 写一个Greasemonkey插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-5-_学习node-js"><span class="nav-number">4.2.6.</span> <span class="nav-text">4.2.1.5. 学习node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2-_学习html5"><span class="nav-number">4.2.7.</span> <span class="nav-text">4.2.2. 学习html5</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-3-_参考资料"><span class="nav-number">4.2.8.</span> <span class="nav-text">4.2.3. 参考资料</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、_推荐书籍"><span class="nav-number">5.</span> <span class="nav-text">五、 推荐书籍</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">东小侠</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dongxiaoxia"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("eNfNM1dz39uvzdbHhXaoGjMi-gzGzoHsz", "pbRRB2CfUCQ8d29wGvyI8Wpj");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
     }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
-</script>
 
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
     });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
-</script>
-
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#" class="overlay" id="qrcode"></a>',
-  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
-</script>
-
-
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"null"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script> 
+  </script>
 
 
 
+  
 
-
-  </body>
+</body>
 </html>
