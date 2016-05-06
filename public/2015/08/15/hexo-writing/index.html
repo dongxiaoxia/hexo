@@ -53,7 +53,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -73,7 +73,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.1" />
 
 
 
@@ -96,7 +96,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown写作常用语法">
 <meta property="og:url" content="http://www.dongxiaoxia.xyz/2015/08/15/hexo-writing/index.html">
-<meta property="og:site_name" content="Hello World">
+<meta property="og:site_name" content="东小侠">
 <meta property="og:description" content="这是新的开始，我用hexo创建了第一篇文章。
 标题
 使用 # 表示标题，一级标题使用一个 # ，二级标题使用两个 ## ，以此类推，共有六级标题。
@@ -138,13 +138,13 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: 6276589648156296000,
       author: '博主'
     }
   };
 </script>
 
-  <title> Markdown写作常用语法 | Hello World </title>
+  <title> Markdown写作常用语法 | 东小侠 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -184,7 +184,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Hello World</span>
+      <span class="site-title">东小侠</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -226,16 +226,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -256,18 +246,28 @@
         </li>
       
         
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
             
-            公益404
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resume">
+          <a href="/resume" rel="section">
+            
+              <i class="menu-item-icon fa fa-book fa-fw"></i> <br />
+            
+            简历
           </a>
         </li>
       
         
         <li class="menu-item menu-item-something">
-          <a href="/" rel="section">
+          <a href="/something" rel="section">
             
               <i class="menu-item-icon fa fa-flash fa-fw"></i> <br />
             
@@ -277,9 +277,39 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'LEW-HJ8C4q4d2iL3MKNA','2.0.0');
+</script>
+
+
+
+    </div>
   
 </nav>
 
@@ -351,6 +381,14 @@
             </span>
           
 
+		   <!-- 在下面的位置加上如下代码 -->
+  
+       <span id="busuanzi_container_page_pv">
+       &nbsp; | &nbsp; 热度&nbsp; <span id="busuanzi_value_page_pv"></span>°C
+       </span>
+       
+   <!-- 在上面的位置加上如上代码 --> 
+		  
           
             
               <span class="post-comments-count">
@@ -376,11 +414,6 @@
               </span>
           
 
-          
-              &nbsp; | &nbsp;
-              <span class="page-pv"><i class="fa fa-file-o"></i>
-              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-              </span>
           
         </div>
       </header>
@@ -645,7 +678,7 @@
       
         
 <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
-  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <div>我知道是不会有人点的，但万一有人想不开呢？</div>
   <button id="rewardButton", disable="enable", onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}", style="cursor: pointer; border: 0; outline: 0; border-radius: 100%; padding: 0; margin: 0; letter-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none">
     <span onmouseover="this.style.color='rgb(236,96,0)';this.style.background='rgb(204,204,204)'" onMouseOut="this.style.color='#fff';this.style.background='rgb(236,96,0)'" style="display: inline-block; width: 70px; height: 70px; border-radius: 100%; line-height: 81px; color: #fff; font: 400 35px/75px 'microsofty'; background: rgb(236,96,0)">赏</span>
   </button>
@@ -780,12 +813,12 @@
                src="/images/avatar.jpg"
                alt="东小侠" />
           <p class="site-author-name" itemprop="name">东小侠</p>
-          <p class="site-description motion-element" itemprop="description">怕什么真理无穷 进一寸有进一寸的欢喜</p>
+          <p class="site-description motion-element" itemprop="description" style="margin-top: 5px;font-size: 15px;color: #fff">怕什么真理无穷 进一寸有进一寸的欢喜</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -802,7 +835,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -816,20 +849,20 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/dongxiaoxia" target="_blank" title="github">
+                <a href="https://github.com/dongxiaoxia" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-globe"></i>
+                    <i class="fa fa-github"></i>
                   
-                  github
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/dong-xiao-xia" target="_blank" title="zhihu">
+                <a href="https://www.zhihu.com/people/dong-xiao-xia" target="_blank" title="知乎">
                   
                     <i class="fa fa-globe"></i>
                   
-                  zhihu
+                  知乎
                 </a>
               </span>
             
@@ -875,6 +908,10 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">东小侠</span>
+  <span class="with-love">
+    <i class="fa fa-heart-o"></i>
+  </span>
+  <apan> 岁月长 衣裳薄</span>
 </div>
 
 <div class="powered-by">
@@ -895,11 +932,11 @@
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+    <span class="site-uv"><i class="fa fa-user"></i>本站访客数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人次</span>
   
 
   
-    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+    <span class="site-pv"><i class="fa fa-eye"></i>本站总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
   
   
 </div>
@@ -999,6 +1036,10 @@
   </script>
 
   
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
     
   
 
