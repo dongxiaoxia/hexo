@@ -83,7 +83,7 @@
 <meta name="description" content="怕什么真理无穷 进一寸有进一寸的欢喜">
 <meta property="og:type" content="website">
 <meta property="og:title" content="东小侠">
-<meta property="og:url" content="http://www.dongxiaoxia.xyz/tags/Hexo/index.html">
+<meta property="og:url" content="http://www.dongxiaoxia.xyz/tags/hexo/index.html">
 <meta property="og:site_name" content="东小侠">
 <meta property="og:description" content="怕什么真理无穷 进一寸有进一寸的欢喜">
 <meta name="twitter:card" content="summary">
@@ -106,7 +106,7 @@
   };
 </script>
 
-  <title> 标签: Hexo | 东小侠 </title>
+  <title> 标签: hexo | 东小侠 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -287,7 +287,7 @@
   <div id="posts" class="posts-collapse">
     <div class="collection-title">
       <h2 >
-        Hexo
+        hexo
         <small>标签</small>
       </h2>
     </div>
@@ -300,37 +300,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2015/12/24/java00002/" itemprop="url">
+            <a class="post-title-link" href="/2015/08/15/hexo-writing/" itemprop="url">
               
-                <span itemprop="name">Java程序员的就业指导</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-12-24T22:03:44+08:00"
-              content="2015-12-24" >
-          12-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/08/02/hexo001/" itemprop="url">
-              
-                <span itemprop="name">用Hexo与Github打造属于自己的博客</span>
+                <span itemprop="name">Markdown写作常用语法</span>
               
             </a>
         
@@ -338,9 +310,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2015-08-02T20:22:44+08:00"
-              content="2015-08-02" >
-          08-02
+              datetime="2015-08-15T00:04:12+08:00"
+              content="2015-08-15" >
+          08-15
         </time>
       </div>
 
@@ -620,97 +592,38 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("eNfNM1dz39uvzdbHhXaoGjMi-gzGzoHsz", "pbRRB2CfUCQ8d29wGvyI8Wpj");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
+</body>
+</html>
+Query = {short_name:"dongxiaoxia"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
   </script>
 
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
 
+
+
+
+
+  
+  
+  
+
+  
 
   
 
