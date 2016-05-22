@@ -77,6 +77,9 @@ theme: next
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: https://github.com/dongxiaoxia/dongxiaoxia.github.io.git
+- type: git
+  repo: https://github.com/dongxiaoxia/dongxiaoxia.github.io.git
   branch: master
+- type: git
+  repo: https://git.coding.net/dongxiaoxia/dongxiaoxia.git
+  branch: coding-pages
