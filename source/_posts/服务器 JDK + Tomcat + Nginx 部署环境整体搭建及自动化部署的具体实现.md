@@ -1,10 +1,12 @@
 title: 服务器 JDK + Tomcat + Nginx 部署环境整体搭建及自动化部署的具体实现
 date: 2017-01-19 11:39:44
-permalink: lunix
+permalink: linux
 tags:
-- lunix 部署 服务器
+- linux
+- 部署
+- 服务器
 categories:
-- linix
+- linux
 
 ---
 本篇文章主要围绕一个问题：本地开发完项目后如何简单部署到服务器？
